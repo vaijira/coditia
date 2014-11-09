@@ -1,0 +1,4 @@
+db.adaptar=postgresql
+db.url=jdbc:postgresql://localhost/coditia
+db.user=coditia
+db.password=coditia
