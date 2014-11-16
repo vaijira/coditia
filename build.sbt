@@ -7,11 +7,14 @@ version := "0.1-SNAPSHOT"
 
 scalaVersion := "2.11.2"
 
+scalacOptions += "-deprecation"
+
 seq(webSettings :_*)
 
 libraryDependencies ++= {
   val liftVersion = "2.6-RC1"
   Seq(
+    "org.scala-lang.modules" %% "scala-xml" % "1.0.2",
     "net.liftweb" %% "lift-webkit" % liftVersion % "compile",
     "net.liftweb" %% "lift-squeryl-record" % liftVersion,
     "com.zaxxer" % "HikariCP-java6" % "2.2.4" % "compile",

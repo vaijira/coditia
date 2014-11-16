@@ -1,4 +1,5 @@
-db.adaptar=postgresql
+db.adapter=org.squeryl.adapters.PostgreSqlAdapter
+db.driver=org.postgresql.Driver
 db.url=jdbc:postgresql://localhost/coditia
 db.user=coditia
 db.password=coditia

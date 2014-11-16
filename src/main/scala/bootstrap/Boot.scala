@@ -5,6 +5,7 @@ import net.liftweb.sitemap.{Menu, SiteMap}
 import net.liftweb.common.{Loggable, Full}
 import net.liftweb.util.{Props, LiftFlowOfControlException}
 import com.zaxxer.hikari.{HikariConfig, HikariDataSource}
+import org.squeryl.internals.DatabaseAdapter
 
 /**
   * A class that's instantiated early and run.  It allows the application
@@ -59,16 +60,17 @@ class Boot extends Loggable {
 
   /* init DB using Hikari Pool */
   private def initDB() {
+
     def getAdapter = {
-      import org.squeryl.adapters._
-      Props.get("db.adapter") match  {
-        case Full("postgresql") => new PostgreSqlAdapter
-        case Full("h2") => new H2Adapter
-        case _ => throw new IllegalStateException("Unable to create a database adapter for the application")
-      }
+      val adapterClass = Props.get("db.adapter") openOr "org.squeryl.adapters.H2Adapter"
+      val adapter: DatabaseAdapter = Class.forName(adapterClass).newInstance().asInstanceOf[DatabaseAdapter]
+
+      adapter
     }
+
     val config = new HikariConfig()
-    config.setJdbcUrl(Props.get("db.url") openOr "jdbc:h2:mem:db;AUTO_SERVER=TRUE")
+    Class.forName(Props.get("db.driver") openOr "org.h2.Driver")
+    config.setJdbcUrl(Props.get("db.url") openOr "jdbc:h2:mem:db;DB_CLOSE_DELAY=-1")
     config.setUsername(Props.get("db.user") openOr "")
     config.setPassword(Props.get("db.password") openOr "")
     config.addDataSourceProperty("cachePrepStmts", "true")
