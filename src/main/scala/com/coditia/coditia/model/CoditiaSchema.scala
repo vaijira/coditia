@@ -41,7 +41,7 @@ object CoditiaSchema extends Schema {
     val cik = new IntField(this)
 
     val companyId = new LongField(this)
-    lazy val company = CoditiaSchema.companyToSecCompany.right(this)
+    lazy val company = CoditiaSchema.companyToSecCompany.right(this).head
   }
 
   object SecCompany extends SecCompany with MetaRecord[SecCompany]

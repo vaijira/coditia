@@ -3,19 +3,25 @@ package com.coditia.coditia.crawler
 import scala.xml.XML
 import com.coditia.coditia.model.CoditiaSchema
 import net.liftweb.squerylrecord.RecordTypeMode._
+import net.liftweb.common.Loggable
 
-class SecCrawler {
 
-  val url = "http://www.sec.gov/Archives/edgar/monthly/xbrlrss-2006-02.xml"
+abstract class SecFiling(val doc: String)
+case object Filing10K extends SecFiling("10-K")
 
-  def proccessRss(url: String): Unit = {
+
+class SecCrawler extends Loggable {
+
+  def proccessRss(url: String, filing: SecFiling): Unit = {
+    logger.info("Loading XML " + url)
     val rss = XML.load(url)
 
-    val companies = (rss \\ "item").filter(item => (item \\ "formType").text == "10-K")
+    val companies = (rss \\ "item").filter(item => (item \\ "formType").text == filing.doc)
 
     for (company <- companies) {
       val name = (company \\ "companyName").text
       val cik = ((company \\ "cikNumber").text).toInt
+      logger.debug("processing 10-K file for company: " + name + " and CIK: " + cik)
 
       val secCompany = from(CoditiaSchema.secCompany)(c =>
           where(c.cik === cik) select (c))
@@ -26,6 +32,7 @@ class SecCrawler {
 
         val secCompany = CoditiaSchema.SecCompany.createRecord.cik(cik).companyId(company.id)
         CoditiaSchema.secCompany.insert(secCompany)
+        logger.debug("Created company " + company)
       }
 
     }

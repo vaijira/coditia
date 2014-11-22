@@ -60,6 +60,7 @@ class Boot extends Loggable {
 
   /* init DB using Hikari Pool */
   private def initDB() {
+    logger.info("Initializing database...")
 
     def getAdapter = {
       val adapterClass = Props.get("db.adapter") openOr "org.squeryl.adapters.H2Adapter"
