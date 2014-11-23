@@ -11,12 +11,17 @@ import net.liftweb.http.{S, Req, LiftSession }
 import net.liftweb.squerylrecord.SquerylRecord
 import net.liftweb.squerylrecord.RecordTypeMode._
 
-
+/**
+ * Provides a lift session for tests
+ */
 trait TestLiftSession {
   def session = new LiftSession("", StringHelpers.randomString(20), Empty)
   def inSession[T](a: => T): T = S.init(Req.nil, session) { a }
 }
 
+/**
+ * Provides DB initialization for tests
+ */
 trait DBTestKit extends Loggable {
 
   Class.forName("org.h2.Driver")

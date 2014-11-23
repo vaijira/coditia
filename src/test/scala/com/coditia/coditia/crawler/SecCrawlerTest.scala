@@ -5,7 +5,9 @@ import org.scalatest.FlatSpec
 import net.liftweb.common.Loggable
 import net.liftweb.squerylrecord.RecordTypeMode._
 
-
+/**
+ * Test for SecCrawler
+ */
 class SecCrawlerTest extends FlatSpec with DBTestKit with TestLiftSession with Loggable {
   override def withFixture(test: NoArgTest) = {
     configureH2
@@ -17,7 +19,7 @@ class SecCrawlerTest extends FlatSpec with DBTestKit with TestLiftSession with L
     }
   }
 
-  "Sec Crawler" should "create a new company" in {
+  "SEC Crawler crawling specific XBRL RSS for 10-K" should "create a new company" in {
     val crawler = new SecCrawler
     //original data "http://www.sec.gov/Archives/edgar/monthly/xbrlrss-2006-02.xml"
     val url = getClass.getResource("/xbrlrss-2006-02.xml")
