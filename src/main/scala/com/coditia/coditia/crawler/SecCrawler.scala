@@ -6,8 +6,15 @@ import net.liftweb.squerylrecord.RecordTypeMode._
 import net.liftweb.common.Loggable
 
 
-abstract class SecFiling(val kind: String)
-case object Filing10K extends SecFiling("10-K")
+abstract class SecFiling(val kind: String) {
+  def parse(url: String)
+}
+
+case object Filing10K extends SecFiling("10-K") with Loggable {
+  override def parse(url: String) = {
+    logger.info("Start to parse 10-K filing from url " + url)
+  }
+}
 
 /**
  * Crawler to process SEC filings
@@ -17,8 +24,8 @@ class SecCrawler extends Loggable {
   /**
    * Process SEC RSS files
    */
-  def proccessRss(url: String, filing: SecFiling): Unit = {
-    logger.info("Loading XML " + url)
+  def parseRss(url: String, filing: SecFiling): Unit = {
+    logger.info("Loading SEC RSS XML " + url)
     val rss = XML.load(url)
 
     val companies = (rss \\ "item").filter(item => (item \\ "formType").text == filing.kind)
@@ -32,14 +39,19 @@ class SecCrawler extends Loggable {
           where(c.cik === cik) select (c))
 
       if (secCompany.isEmpty) {
-        val company = Company.createRecord.name(name)
-        CoditiaSchema.company.insert(company)
+        val companyRecord = Company.createRecord.name(name)
+        CoditiaSchema.company.insert(companyRecord)
 
-        val secCompany = SecCompany.createRecord.cik(cik).companyId(company.id)
-        CoditiaSchema.secCompany.insert(secCompany)
-        logger.debug("Created company " + company)
+        val secCompanyRecord = SecCompany.createRecord.cik(cik).companyId(companyRecord.id)
+        CoditiaSchema.secCompany.insert(secCompanyRecord)
+        logger.debug("Created company " + name)
       }
 
+      val xbrlFile = (company \\ "xbrlFile").filter(file =>
+                        file.attributes.toString.contains("edgar:type=\"EX-100.INS\"")).head
+
+      val filingUrl = xbrlFile.attributes.toString.split(" ").find(x => x.startsWith("edgar:url")).head
+      filing.parse(filingUrl.split("=")(1))
     }
   }
 }

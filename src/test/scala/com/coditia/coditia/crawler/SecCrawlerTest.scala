@@ -24,7 +24,7 @@ class SecCrawlerTest extends FlatSpec with DBTestKit with TestLiftSession with L
     //original data "http://www.sec.gov/Archives/edgar/monthly/xbrlrss-2006-02.xml"
     val url = getClass.getResource("/xbrlrss-2006-02.xml")
     logger.debug("loading file ..." + url.getPath)
-    crawler.proccessRss(url.getPath, Filing10K)
+    crawler.parseRss(url.getPath, Filing10K)
 
     val companies = from(CoditiaSchema.secCompany)(c =>
           where(c.cik === 796343) select (c))
