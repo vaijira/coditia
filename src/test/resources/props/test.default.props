@@ -1,0 +1,29 @@
+db.adapter=org.squeryl.adapters.PostgreSqlAdapter
+db.driver=org.postgresql.Driver
+db.url=jdbc:postgresql://localhost/coditia
+db.user=coditia
+db.password=coditia
+
+# default store eXistEmbedded, others: eXist & dbxml
+coditia.xmldbstore=dbxml
+coditia.xmlcachepath=/home/coditia/cache
+
+# default parameters for exist database
+coditia.eXist.xmldbpath=/
+coditia.eXist.container=default
+coditia.eXist.userdb=admin
+coditia.eXist.passdb=
+coditia.eXist.namedb=exist/xmlrpc/db
+coditia.eXist.hostdb=localhost
+coditia.eXist.portdb=8080
+
+# default parameters for exist embedded database
+coditia.eXistEmbedded.xmldbpath=/
+coditia.eXistEmbedded.container=default
+coditia.eXistEmbedded.userdb=admin
+coditia.eXistEmbedded.passdb=
+coditia.eXistEmbedded.namedb=/db
+
+# default parameters for oracle bdb XML database
+coditia.dbxml.xmldbpath=/home/coditia/dbxml
+coditia.dbxml.container=default
