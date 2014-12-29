@@ -1,3 +1,12 @@
+/*
+ * Companies related database objects.
+ *
+ * Copyright (C) 2014 Jorge Perez Burgos <jorge.perez*at*coditia.com>.
+ *
+ * This work is licensed under the terms of the Affero GNU GPL, version 3.
+ * See the LICENSE file in the top-level directory.
+ *
+ */
 package com.coditia.coditia.model
 
 import org.squeryl.annotations.Column

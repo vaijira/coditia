@@ -1,3 +1,12 @@
+/*
+ * Lift configuration
+ *
+ * Copyright (C) 2014 Jorge Perez Burgos <jorge.perez*at*coditia.com>.
+ *
+ * This work is licensed under the terms of the Affero GNU GPL, version 3.
+ * See the LICENSE file in the top-level directory.
+ *
+ */
 package bootstrap.liftweb
 
 import net.liftweb.http.{Html5Properties, LiftRules, Req}
@@ -25,7 +34,7 @@ class Boot extends Loggable {
     // Use HTML5 for rendering
     LiftRules.htmlProperties.default.set((r: Req) =>
       new Html5Properties(r.userAgent))
-    
+
     initDB()
 
     import net.liftweb.squerylrecord.RecordTypeMode._
