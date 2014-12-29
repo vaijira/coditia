@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?xml-stylesheet type="text/xsl" href="/rss/styles/shared_xsl_stylesheet_v2.xml"?>
+<rss version="2.0">
+  <channel>
+    <title>All XBRL Data Submitted to the SEC for 2009-02</title>
+    <link>http://www.sec.gov/spotlight/xbrl/filings-and-feeds.shtml</link>
+    <atom:link href="http://www.sec.gov/Archives/edgar/monthly/xbrlrss-2009-02.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom"/>
+    <description>This is a list all of the filings containing XBRL for 2009-02</description>
+    <language>en-us</language>
+    <pubDate>Tue, 25 Jun 2013 00:00:00 EDT</pubDate>
+    <lastBuildDate>Tue, 25 Jun 2013 00:00:00 EDT</lastBuildDate>
+    <item>
+      <title>SANDRIDGE ENERGY INC (0001349436) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/1349436/000095013409004050/0000950134-09-004050-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Fri, 27 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>SANDRIDGE ENERGY INC</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/27/2009</edgar:filingDate>
+        <edgar:cikNumber>0001349436</edgar:cikNumber>
+        <edgar:accessionNumber>0000950134-09-004050</edgar:accessionNumber>
+        <edgar:fileNumber>001-33784</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090227000000</edgar:acceptanceDatetime>
+        <edgar:period>20090227</edgar:period>
+        <edgar:assistantDirector>4</edgar:assistantDirector>
+        <edgar:assignedSic>1311</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d66597e8vk.htm" edgar:type="8-K" edgar:size="16006" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/1349436/000095013409004050/d66597e8vk.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="sd-20081231.xml" edgar:type="EX-100.INS" edgar:size="933926" edgar:description="INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1349436/000095013409004050/sd-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="sd-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="19345" edgar:description="SCHEMA DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1349436/000095013409004050/sd-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="sd-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="20341" edgar:description="CALCULATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1349436/000095013409004050/sd-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="sd-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="152305" edgar:description="LABELS LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1349436/000095013409004050/sd-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="sd-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="175131" edgar:description="PRESENTATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1349436/000095013409004050/sd-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="sd-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="7450" edgar:description="DEFINITION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1349436/000095013409004050/sd-20081231_def.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>JOHNSON &amp; JOHNSON (0000200406) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/200406/000095012309003678/0000950123-09-003678-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Fri, 27 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>JOHNSON &amp; JOHNSON</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/27/2009</edgar:filingDate>
+        <edgar:cikNumber>0000200406</edgar:cikNumber>
+        <edgar:accessionNumber>0000950123-09-003678</edgar:accessionNumber>
+        <edgar:fileNumber>001-03215</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090227000000</edgar:acceptanceDatetime>
+        <edgar:period>20090227</edgar:period>
+        <edgar:assistantDirector>1</edgar:assistantDirector>
+        <edgar:assignedSic>2834</edgar:assignedSic>
+        <edgar:fiscalYearEnd>0209</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="y74152xbe8vk.htm" edgar:type="8-K" edgar:size="15875" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/200406/000095012309003678/y74152xbe8vk.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="jnj-20081228.xml" edgar:type="EX-100.INS" edgar:size="802491" edgar:description="INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/200406/000095012309003678/jnj-20081228.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="jnj-20081228.xsd" edgar:type="EX-100.SCH" edgar:size="12971" edgar:description="SCHEMA DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/200406/000095012309003678/jnj-20081228.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="jnj-20081228_cal.xml" edgar:type="EX-100.CAL" edgar:size="6698" edgar:description="CALCULATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/200406/000095012309003678/jnj-20081228_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="jnj-20081228_lab.xml" edgar:type="EX-100.LAB" edgar:size="104398" edgar:description="LABELS LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/200406/000095012309003678/jnj-20081228_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="jnj-20081228_pre.xml" edgar:type="EX-100.PRE" edgar:size="849944" edgar:description="PRESENTATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/200406/000095012309003678/jnj-20081228_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="jnj-20081228_def.xml" edgar:type="EX-100.DEF" edgar:size="9565" edgar:description="DEFINITION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/200406/000095012309003678/jnj-20081228_def.xml" />
+          <edgar:xbrlFile edgar:sequence="8" edgar:file="y74152xby74152a1.gif" edgar:type="GRAPHIC" edgar:size="4674" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/200406/000095012309003678/y74152xby74152a1.gif" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>RR Donnelley &amp; Sons Co (0000029669) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/29669/000119312509041140/0001193125-09-041140-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Fri, 27 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>RR Donnelley &amp; Sons Co</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/27/2009</edgar:filingDate>
+        <edgar:cikNumber>0000029669</edgar:cikNumber>
+        <edgar:accessionNumber>0001193125-09-041140</edgar:accessionNumber>
+        <edgar:fileNumber>001-04694</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090227000000</edgar:acceptanceDatetime>
+        <edgar:period>20090225</edgar:period>
+        <edgar:assistantDirector>5</edgar:assistantDirector>
+        <edgar:assignedSic>2750</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d8k.htm" edgar:type="8-K" edgar:size="17838" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/29669/000119312509041140/d8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="rrd-20081231.xml" edgar:type="EX-100.INS" edgar:size="846167" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/29669/000119312509041140/rrd-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="rrd-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="8340" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/29669/000119312509041140/rrd-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="rrd-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="43542" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/29669/000119312509041140/rrd-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="rrd-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="75014" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/29669/000119312509041140/rrd-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="rrd-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="110661" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/29669/000119312509041140/rrd-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="rrd-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="90014" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/29669/000119312509041140/rrd-20081231_pre.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>XEROX CORP (0000108772) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/108772/000119312509041068/0001193125-09-041068-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Fri, 27 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>XEROX CORP</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/27/2009</edgar:filingDate>
+        <edgar:cikNumber>0000108772</edgar:cikNumber>
+        <edgar:accessionNumber>0001193125-09-041068</edgar:accessionNumber>
+        <edgar:fileNumber>001-04471</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090227000000</edgar:acceptanceDatetime>
+        <edgar:period>20090213</edgar:period>
+        <edgar:assistantDirector>3</edgar:assistantDirector>
+        <edgar:assignedSic>3577</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d8k.htm" edgar:type="8-K" edgar:size="20536" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/108772/000119312509041068/d8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="xrx-20081231.xml" edgar:type="EX-100.INS" edgar:size="2892076" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/108772/000119312509041068/xrx-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="xrx-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="16123" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/108772/000119312509041068/xrx-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="xrx-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="392010" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/108772/000119312509041068/xrx-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="xrx-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="23653" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/108772/000119312509041068/xrx-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="xrx-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="43996" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/108772/000119312509041068/xrx-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="xrx-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="2370511" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/108772/000119312509041068/xrx-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="8" edgar:file="xrx-20081231_ref.xml" edgar:type="EX-100.REF" edgar:size="1652" edgar:description="XBRL TAXONOMY EXTENSION REFERENCE LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/108772/000119312509041068/xrx-20081231_ref.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>OMNICOM GROUP INC (0000029989) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/29989/000089109209000893/0000891092-09-000893-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Fri, 27 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>OMNICOM GROUP INC</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/27/2009</edgar:filingDate>
+        <edgar:cikNumber>0000029989</edgar:cikNumber>
+        <edgar:accessionNumber>0000891092-09-000893</edgar:accessionNumber>
+        <edgar:fileNumber>001-10551</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090227000000</edgar:acceptanceDatetime>
+        <edgar:period>20090227</edgar:period>
+        <edgar:assistantDirector>11</edgar:assistantDirector>
+        <edgar:assignedSic>7311</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="e34638_8k.htm" edgar:type="8-K" edgar:size="13178" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/29989/000089109209000893/e34638_8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="omc-20081231.xml" edgar:type="EX-100.INS" edgar:size="76367" edgar:description="" edgar:url="http://www.sec.gov/Archives/edgar/data/29989/000089109209000893/omc-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="omc-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="10100" edgar:description="" edgar:url="http://www.sec.gov/Archives/edgar/data/29989/000089109209000893/omc-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="omc-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="35311" edgar:description="" edgar:url="http://www.sec.gov/Archives/edgar/data/29989/000089109209000893/omc-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="omc-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="8396" edgar:description="" edgar:url="http://www.sec.gov/Archives/edgar/data/29989/000089109209000893/omc-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="omc-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="5958" edgar:description="" edgar:url="http://www.sec.gov/Archives/edgar/data/29989/000089109209000893/omc-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="omc-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="65716" edgar:description="" edgar:url="http://www.sec.gov/Archives/edgar/data/29989/000089109209000893/omc-20081231_pre.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>HCP, INC. (0000765880) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/0001047469-09-001929-index.htm</link>
+      <description>10-K</description>
+      <pubDate>Fri, 27 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>HCP, INC.</edgar:companyName>
+        <edgar:formType>10-K</edgar:formType>
+        <edgar:filingDate>02/27/2009</edgar:filingDate>
+        <edgar:cikNumber>0000765880</edgar:cikNumber>
+        <edgar:accessionNumber>0001047469-09-001929</edgar:accessionNumber>
+        <edgar:fileNumber>001-08895</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090227000000</edgar:acceptanceDatetime>
+        <edgar:period>20081231</edgar:period>
+        <edgar:assistantDirector>8</edgar:assistantDirector>
+        <edgar:assignedSic>6798</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="a2190958z10-k.htm" edgar:type="10-K" edgar:size="3410739" edgar:description="FORM 10-K" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/a2190958z10-k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="a2190958zex-21_1.htm" edgar:type="EX-21.1" edgar:size="44898" edgar:description="EXHIBIT 21.1" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/a2190958zex-21_1.htm" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="a2190958zex-23_1.htm" edgar:type="EX-23.1" edgar:size="8815" edgar:description="EXHIBIT 23.1" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/a2190958zex-23_1.htm" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="a2190958zex-31_1.htm" edgar:type="EX-31.1" edgar:size="7644" edgar:description="EXHIBIT 31.1" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/a2190958zex-31_1.htm" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="a2190958zex-31_2.htm" edgar:type="EX-31.2" edgar:size="7673" edgar:description="EXHIBIT 31.2" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/a2190958zex-31_2.htm" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="a2190958zex-32_1.htm" edgar:type="EX-32.1" edgar:size="4345" edgar:description="EXHIBIT 32.1" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/a2190958zex-32_1.htm" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="a2190958zex-32_2.htm" edgar:type="EX-32.2" edgar:size="4380" edgar:description="EXHIBIT 32.2" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/a2190958zex-32_2.htm" />
+          <edgar:xbrlFile edgar:sequence="8" edgar:file="hcp-20081231.xml" edgar:type="EX-100.INS" edgar:size="3233276" edgar:description="EXHIBIT 100.INS" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/hcp-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="9" edgar:file="hcp-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="13712" edgar:description="EXHIBIT 100.SCH" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/hcp-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="10" edgar:file="hcp-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="84888" edgar:description="EXHIBIT 100.CAL" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/hcp-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="11" edgar:file="hcp-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="24248" edgar:description="EXHIBIT 100.DEF" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/hcp-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="12" edgar:file="hcp-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="335538" edgar:description="EXHIBIT 100.LAB" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/hcp-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="13" edgar:file="hcp-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="151152" edgar:description="EXHIBIT 100.PRE" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/hcp-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="14" edgar:file="g852472.jpg" edgar:type="GRAPHIC" edgar:size="31185" edgar:description="G852472.JPG" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/g852472.jpg" />
+          <edgar:xbrlFile edgar:sequence="15" edgar:file="g249952.jpg" edgar:type="GRAPHIC" edgar:size="50292" edgar:description="G249952.JPG" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/g249952.jpg" />
+          <edgar:xbrlFile edgar:sequence="16" edgar:file="g879231.jpg" edgar:type="GRAPHIC" edgar:size="61575" edgar:description="G879231.JPG" edgar:url="http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/g879231.jpg" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>CHEVRON CORP (0000093410) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/0000891618-09-000054-index.htm</link>
+      <description>10-K</description>
+      <pubDate>Thu, 26 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>CHEVRON CORP</edgar:companyName>
+        <edgar:formType>10-K</edgar:formType>
+        <edgar:filingDate>02/26/2009</edgar:filingDate>
+        <edgar:cikNumber>0000093410</edgar:cikNumber>
+        <edgar:accessionNumber>0000891618-09-000054</edgar:accessionNumber>
+        <edgar:fileNumber>001-00368</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090226000000</edgar:acceptanceDatetime>
+        <edgar:period>20081231</edgar:period>
+        <edgar:assistantDirector>4</edgar:assistantDirector>
+        <edgar:assignedSic>2911</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="f50714e10vk.htm" edgar:type="10-K" edgar:size="2182545" edgar:description="FORM 10-K" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714e10vk.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="f50714exv4w2.htm" edgar:type="EX-4.2" edgar:size="1403" edgar:description="EX-4.2" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv4w2.htm" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="f50714exv10w1.htm" edgar:type="EX-10.1" edgar:size="66198" edgar:description="EX-10.1" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv10w1.htm" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="f50714exv10w2.htm" edgar:type="EX-10.2" edgar:size="71936" edgar:description="EX-10.2" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv10w2.htm" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="f50714exv10w3.htm" edgar:type="EX-10.3" edgar:size="136204" edgar:description="EX-10.3" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv10w3.htm" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="f50714exv10w5.htm" edgar:type="EX-10.5" edgar:size="68411" edgar:description="EX-10.5" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv10w5.htm" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="f50714exv10w6.htm" edgar:type="EX-10.6" edgar:size="122797" edgar:description="EX-10.6" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv10w6.htm" />
+          <edgar:xbrlFile edgar:sequence="8" edgar:file="f50714exv10w7.htm" edgar:type="EX-10.7" edgar:size="107091" edgar:description="EX-10.7" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv10w7.htm" />
+          <edgar:xbrlFile edgar:sequence="9" edgar:file="f50714exv10w13.htm" edgar:type="EX-10.13" edgar:size="5874" edgar:description="EX-10.13" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv10w13.htm" />
+          <edgar:xbrlFile edgar:sequence="10" edgar:file="f50714exv10w19.htm" edgar:type="EX-10.19" edgar:size="5651" edgar:description="EX-10.19" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv10w19.htm" />
+          <edgar:xbrlFile edgar:sequence="11" edgar:file="f50714exv12w1.htm" edgar:type="EX-12.1" edgar:size="23611" edgar:description="EX-12.1" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv12w1.htm" />
+          <edgar:xbrlFile edgar:sequence="12" edgar:file="f50714exv21w1.htm" edgar:type="EX-21.1" edgar:size="27587" edgar:description="EX-21.1" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv21w1.htm" />
+          <edgar:xbrlFile edgar:sequence="13" edgar:file="f50714exv23w1.htm" edgar:type="EX-23.1" edgar:size="4309" edgar:description="EX-23.1" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv23w1.htm" />
+          <edgar:xbrlFile edgar:sequence="14" edgar:file="f50714exv24w1.htm" edgar:type="EX-24.1" edgar:size="3390" edgar:description="EX-24.1" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv24w1.htm" />
+          <edgar:xbrlFile edgar:sequence="15" edgar:file="f50714exv24w2.htm" edgar:type="EX-24.2" edgar:size="3594" edgar:description="EX-24.2" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv24w2.htm" />
+          <edgar:xbrlFile edgar:sequence="16" edgar:file="f50714exv24w3.htm" edgar:type="EX-24.3" edgar:size="3654" edgar:description="EX-24.3" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv24w3.htm" />
+          <edgar:xbrlFile edgar:sequence="17" edgar:file="f50714exv24w4.htm" edgar:type="EX-24.4" edgar:size="3593" edgar:description="EX-24.4" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv24w4.htm" />
+          <edgar:xbrlFile edgar:sequence="18" edgar:file="f50714exv24w5.htm" edgar:type="EX-24.5" edgar:size="3692" edgar:description="EX-24.5" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv24w5.htm" />
+          <edgar:xbrlFile edgar:sequence="19" edgar:file="f50714exv24w6.htm" edgar:type="EX-24.6" edgar:size="3395" edgar:description="EX-24.6" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv24w6.htm" />
+          <edgar:xbrlFile edgar:sequence="20" edgar:file="f50714exv24w7.htm" edgar:type="EX-24.7" edgar:size="3658" edgar:description="EX-24.7" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv24w7.htm" />
+          <edgar:xbrlFile edgar:sequence="21" edgar:file="f50714exv24w8.htm" edgar:type="EX-24.8" edgar:size="3653" edgar:description="EX-24.8" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv24w8.htm" />
+          <edgar:xbrlFile edgar:sequence="22" edgar:file="f50714exv24w9.htm" edgar:type="EX-24.9" edgar:size="3388" edgar:description="EX-24.9" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv24w9.htm" />
+          <edgar:xbrlFile edgar:sequence="23" edgar:file="f50714exv24w10.htm" edgar:type="EX-24.10" edgar:size="3661" edgar:description="EX-24.10" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv24w10.htm" />
+          <edgar:xbrlFile edgar:sequence="24" edgar:file="f50714exv24w11.htm" edgar:type="EX-24.11" edgar:size="3401" edgar:description="EX-24.11" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv24w11.htm" />
+          <edgar:xbrlFile edgar:sequence="25" edgar:file="f50714exv24w12.htm" edgar:type="EX-24.12" edgar:size="3388" edgar:description="EX-24.12" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv24w12.htm" />
+          <edgar:xbrlFile edgar:sequence="26" edgar:file="f50714exv24w13.htm" edgar:type="EX-24.13" edgar:size="3662" edgar:description="EX-24.13" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv24w13.htm" />
+          <edgar:xbrlFile edgar:sequence="27" edgar:file="f50714exv31w1.htm" edgar:type="EX-31.1" edgar:size="9181" edgar:description="EX-31.1" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv31w1.htm" />
+          <edgar:xbrlFile edgar:sequence="28" edgar:file="f50714exv31w2.htm" edgar:type="EX-31.2" edgar:size="9148" edgar:description="EX-31.2" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv31w2.htm" />
+          <edgar:xbrlFile edgar:sequence="29" edgar:file="f50714exv32w1.htm" edgar:type="EX-32.1" edgar:size="4184" edgar:description="EX-32.1" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv32w1.htm" />
+          <edgar:xbrlFile edgar:sequence="30" edgar:file="f50714exv32w2.htm" edgar:type="EX-32.2" edgar:size="4188" edgar:description="EX-32.2" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv32w2.htm" />
+          <edgar:xbrlFile edgar:sequence="31" edgar:file="f50714exv99w1.htm" edgar:type="EX-99.1" edgar:size="18159" edgar:description="EX-99.1" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714exv99w1.htm" />
+          <edgar:xbrlFile edgar:sequence="32" edgar:file="cvx-20081231.xml" edgar:type="EX-100.INS" edgar:size="843297" edgar:description="INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/cvx-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="33" edgar:file="cvx-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="16893" edgar:description="SCHEMA DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/cvx-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="34" edgar:file="cvx-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="28071" edgar:description="CALCULATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/cvx-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="35" edgar:file="cvx-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="143576" edgar:description="LABELS LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/cvx-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="36" edgar:file="cvx-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="143275" edgar:description="PRESENTATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/cvx-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="37" edgar:file="cvx-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="10341" edgar:description="DEFINITION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/cvx-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="38" edgar:file="f50714f5071417.gif" edgar:type="GRAPHIC" edgar:size="15918" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071417.gif" />
+          <edgar:xbrlFile edgar:sequence="39" edgar:file="f50714f5071405.gif" edgar:type="GRAPHIC" edgar:size="7816" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071405.gif" />
+          <edgar:xbrlFile edgar:sequence="40" edgar:file="f50714f5071419.gif" edgar:type="GRAPHIC" edgar:size="8756" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071419.gif" />
+          <edgar:xbrlFile edgar:sequence="41" edgar:file="f50714f5071409.gif" edgar:type="GRAPHIC" edgar:size="19671" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071409.gif" />
+          <edgar:xbrlFile edgar:sequence="42" edgar:file="f50714f5071427.gif" edgar:type="GRAPHIC" edgar:size="19511" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071427.gif" />
+          <edgar:xbrlFile edgar:sequence="43" edgar:file="f50714f5071403.gif" edgar:type="GRAPHIC" edgar:size="17930" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071403.gif" />
+          <edgar:xbrlFile edgar:sequence="44" edgar:file="f50714f5071413.gif" edgar:type="GRAPHIC" edgar:size="16770" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071413.gif" />
+          <edgar:xbrlFile edgar:sequence="45" edgar:file="f50714f5071401.gif" edgar:type="GRAPHIC" edgar:size="11961" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071401.gif" />
+          <edgar:xbrlFile edgar:sequence="46" edgar:file="f50714f5071411.gif" edgar:type="GRAPHIC" edgar:size="18437" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071411.gif" />
+          <edgar:xbrlFile edgar:sequence="47" edgar:file="f50714f5071425.gif" edgar:type="GRAPHIC" edgar:size="7166" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071425.gif" />
+          <edgar:xbrlFile edgar:sequence="48" edgar:file="f50714f5071421.gif" edgar:type="GRAPHIC" edgar:size="12223" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071421.gif" />
+          <edgar:xbrlFile edgar:sequence="49" edgar:file="f50714f5071423.gif" edgar:type="GRAPHIC" edgar:size="12802" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071423.gif" />
+          <edgar:xbrlFile edgar:sequence="50" edgar:file="f50714f5071407.gif" edgar:type="GRAPHIC" edgar:size="19668" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071407.gif" />
+          <edgar:xbrlFile edgar:sequence="51" edgar:file="f50714f5071415.gif" edgar:type="GRAPHIC" edgar:size="16652" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071415.gif" />
+          <edgar:xbrlFile edgar:sequence="52" edgar:file="f50714f5071451.jpg" edgar:type="GRAPHIC" edgar:size="15702" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071451.jpg" />
+          <edgar:xbrlFile edgar:sequence="53" edgar:file="f50714f5071452.jpg" edgar:type="GRAPHIC" edgar:size="34581" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071452.jpg" />
+          <edgar:xbrlFile edgar:sequence="54" edgar:file="f50714f5071453.jpg" edgar:type="GRAPHIC" edgar:size="17037" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071453.jpg" />
+          <edgar:xbrlFile edgar:sequence="55" edgar:file="f50714f5071454.jpg" edgar:type="GRAPHIC" edgar:size="23552" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071454.jpg" />
+          <edgar:xbrlFile edgar:sequence="56" edgar:file="f50714f5071455.jpg" edgar:type="GRAPHIC" edgar:size="30355" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071455.jpg" />
+          <edgar:xbrlFile edgar:sequence="57" edgar:file="f50714f5071456.jpg" edgar:type="GRAPHIC" edgar:size="15063" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071456.jpg" />
+          <edgar:xbrlFile edgar:sequence="58" edgar:file="f50714f5071457.jpg" edgar:type="GRAPHIC" edgar:size="10683" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071457.jpg" />
+          <edgar:xbrlFile edgar:sequence="59" edgar:file="f50714f5071458.jpg" edgar:type="GRAPHIC" edgar:size="26493" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071458.jpg" />
+          <edgar:xbrlFile edgar:sequence="60" edgar:file="f50714f5071459.jpg" edgar:type="GRAPHIC" edgar:size="13572" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071459.jpg" />
+          <edgar:xbrlFile edgar:sequence="61" edgar:file="f50714f5071460.jpg" edgar:type="GRAPHIC" edgar:size="21331" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071460.jpg" />
+          <edgar:xbrlFile edgar:sequence="62" edgar:file="f50714f5071461.jpg" edgar:type="GRAPHIC" edgar:size="13620" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071461.jpg" />
+          <edgar:xbrlFile edgar:sequence="63" edgar:file="f50714f5071462.jpg" edgar:type="GRAPHIC" edgar:size="5361" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071462.jpg" />
+          <edgar:xbrlFile edgar:sequence="64" edgar:file="f50714f5071463.jpg" edgar:type="GRAPHIC" edgar:size="4880" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071463.jpg" />
+          <edgar:xbrlFile edgar:sequence="65" edgar:file="f50714f5071464.jpg" edgar:type="GRAPHIC" edgar:size="5912" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/93410/000089161809000054/f50714f5071464.jpg" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>ITRON INC /WA/ (0000780571) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/0000780571-09-000015-index.htm</link>
+      <description>10-K</description>
+      <pubDate>Thu, 26 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>ITRON INC /WA/</edgar:companyName>
+        <edgar:formType>10-K</edgar:formType>
+        <edgar:filingDate>02/26/2009</edgar:filingDate>
+        <edgar:cikNumber>0000780571</edgar:cikNumber>
+        <edgar:accessionNumber>0000780571-09-000015</edgar:accessionNumber>
+        <edgar:fileNumber>000-22418</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090226000000</edgar:acceptanceDatetime>
+        <edgar:period>20081231</edgar:period>
+        <edgar:assistantDirector>10</edgar:assistantDirector>
+        <edgar:assignedSic>3825</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="form10k.htm" edgar:type="10-K" edgar:size="3835258" edgar:description="ANNUAL REPORT ON FORM 10-K FOR THE PERIOD ENDED DECEMBER 31, 2008" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/form10k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="ex_10-2.htm" edgar:type="EX-10.2" edgar:size="17680" edgar:description="CHANGE IN CONTROL AGREEMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/ex_10-2.htm" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="ex_10-6.htm" edgar:type="EX-10.6" edgar:size="14835" edgar:description="INDEMNIFICATION AGREEMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/ex_10-6.htm" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="ex_10-9.htm" edgar:type="EX-10.9" edgar:size="26977" edgar:description="FORM OF NON-QUALIFIED STOCK OPTION GRANT NOTICE AND AGREEMENT FOR NONEMPLOYEE DI" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/ex_10-9.htm" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="ex_10-19.htm" edgar:type="EX-10.19" edgar:size="112689" edgar:description="EXECUTIVE DEFERRED COMPENSATION PLAN" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/ex_10-19.htm" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="ex_10-20.htm" edgar:type="EX-10.20" edgar:size="87329" edgar:description="AMENDED AND RESTATED 2002 EMPLOYEE STOCK PURCHASE PLAN" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/ex_10-20.htm" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="ex_12-1.htm" edgar:type="EX-12.1" edgar:size="70135" edgar:description="STATEMENT RE COMPUTATION OF RATIOS" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/ex_12-1.htm" />
+          <edgar:xbrlFile edgar:sequence="8" edgar:file="ex_21-1.htm" edgar:type="EX-21.1" edgar:size="73085" edgar:description="SUBSIDIARIES OF THE ITRON, INC." edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/ex_21-1.htm" />
+          <edgar:xbrlFile edgar:sequence="9" edgar:file="ex_23-1.htm" edgar:type="EX-23.1" edgar:size="11018" edgar:description="CONSENT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/ex_23-1.htm" />
+          <edgar:xbrlFile edgar:sequence="10" edgar:file="ex_23-2.htm" edgar:type="EX-23.2" edgar:size="2760" edgar:description="CONSENT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/ex_23-2.htm" />
+          <edgar:xbrlFile edgar:sequence="11" edgar:file="ex_31-1.htm" edgar:type="EX-31.1" edgar:size="18787" edgar:description="CERTIFICATE PURSUANT TO SECTION 302" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/ex_31-1.htm" />
+          <edgar:xbrlFile edgar:sequence="12" edgar:file="ex_31-2.htm" edgar:type="EX-31.2" edgar:size="18815" edgar:description="CERTIFICATE PURSUANT TO SECTION 302" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/ex_31-2.htm" />
+          <edgar:xbrlFile edgar:sequence="13" edgar:file="ex_32-1.htm" edgar:type="EX-32.1" edgar:size="8870" edgar:description="CERTIFICATE PURSUANT TO SECTION 906" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/ex_32-1.htm" />
+          <edgar:xbrlFile edgar:sequence="14" edgar:file="itri-20081231.xml" edgar:type="EX-100.INS" edgar:size="86521" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/itri-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="15" edgar:file="itri-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="4190" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/itri-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="16" edgar:file="itri-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="9833" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/itri-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="17" edgar:file="itri-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="3412" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/itri-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="18" edgar:file="itri-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="42071" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/itri-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="19" edgar:file="itri-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="309258" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/itri-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="20" edgar:file="stock_performance.jpg" edgar:type="GRAPHIC" edgar:size="80062" edgar:description="PERFORMANCE GRAPH" edgar:url="http://www.sec.gov/Archives/edgar/data/780571/000078057109000015/stock_performance.jpg" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>COMCAST CORP (0001166691) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/1166691/000119312509037284/0001193125-09-037284-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Wed, 25 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>COMCAST CORP</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/25/2009</edgar:filingDate>
+        <edgar:cikNumber>0001166691</edgar:cikNumber>
+        <edgar:accessionNumber>0001193125-09-037284</edgar:accessionNumber>
+        <edgar:fileNumber>001-32871</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090225000000</edgar:acceptanceDatetime>
+        <edgar:period>20090220</edgar:period>
+        <edgar:assistantDirector>11</edgar:assistantDirector>
+        <edgar:assignedSic>4841</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d8k.htm" edgar:type="8-K" edgar:size="15311" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/1166691/000119312509037284/d8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="cmcsa-20081231.xml" edgar:type="EX-100.INS" edgar:size="2418184" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1166691/000119312509037284/cmcsa-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="cmcsa-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="14736" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/1166691/000119312509037284/cmcsa-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="cmcsa-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="54085" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1166691/000119312509037284/cmcsa-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="cmcsa-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="11029" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1166691/000119312509037284/cmcsa-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="cmcsa-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="108717" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1166691/000119312509037284/cmcsa-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="cmcsa-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="95048" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1166691/000119312509037284/cmcsa-20081231_pre.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>FASTENAL CO (0000815556) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/815556/000119312509037063/0001193125-09-037063-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Wed, 25 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>FASTENAL CO</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/25/2009</edgar:filingDate>
+        <edgar:cikNumber>0000815556</edgar:cikNumber>
+        <edgar:accessionNumber>0001193125-09-037063</edgar:accessionNumber>
+        <edgar:fileNumber>000-16125</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090225000000</edgar:acceptanceDatetime>
+        <edgar:period>20090225</edgar:period>
+        <edgar:assistantDirector>6</edgar:assistantDirector>
+        <edgar:assignedSic>5200</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d8k.htm" edgar:type="8-K" edgar:size="17106" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/815556/000119312509037063/d8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="fast-20081231.xml" edgar:type="EX-100.INS" edgar:size="313000" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/815556/000119312509037063/fast-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="fast-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="5795" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/815556/000119312509037063/fast-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="fast-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="29025" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/815556/000119312509037063/fast-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="fast-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="52270" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/815556/000119312509037063/fast-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="fast-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="70899" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/815556/000119312509037063/fast-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="fast-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="62412" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/815556/000119312509037063/fast-20081231_pre.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>FLUOR CORP (0001124198) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/0001047469-09-001811-index.htm</link>
+      <description>10-K</description>
+      <pubDate>Wed, 25 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>FLUOR CORP</edgar:companyName>
+        <edgar:formType>10-K</edgar:formType>
+        <edgar:filingDate>02/25/2009</edgar:filingDate>
+        <edgar:cikNumber>0001124198</edgar:cikNumber>
+        <edgar:accessionNumber>0001047469-09-001811</edgar:accessionNumber>
+        <edgar:fileNumber>001-16129</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090225000000</edgar:acceptanceDatetime>
+        <edgar:period>20081231</edgar:period>
+        <edgar:assistantDirector>6</edgar:assistantDirector>
+        <edgar:assignedSic>1600</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="a2190865z10-k.htm" edgar:type="10-K" edgar:size="1220317" edgar:description="10-K" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/a2190865z10-k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="a2190865zex-10_21.htm" edgar:type="EX-10.21" edgar:size="50728" edgar:description="EXHIBIT 10.21" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/a2190865zex-10_21.htm" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="a2190865zex-10_22.htm" edgar:type="EX-10.22" edgar:size="14109" edgar:description="EXHIBIT 10.22" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/a2190865zex-10_22.htm" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="a2190865zex-10_23.htm" edgar:type="EX-10.23" edgar:size="14086" edgar:description="EXHIBIT 10.23" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/a2190865zex-10_23.htm" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="a2190865zex-21_1.htm" edgar:type="EX-21.1" edgar:size="312580" edgar:description="EXHIBIT 21.1" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/a2190865zex-21_1.htm" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="a2190865zex-23_1.htm" edgar:type="EX-23.1" edgar:size="9592" edgar:description="EXHIBIT 23.1" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/a2190865zex-23_1.htm" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="a2190865zex-31_1.htm" edgar:type="EX-31.1" edgar:size="8234" edgar:description="EXHIBIT 31.1" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/a2190865zex-31_1.htm" />
+          <edgar:xbrlFile edgar:sequence="8" edgar:file="a2190865zex-31_2.htm" edgar:type="EX-31.2" edgar:size="8238" edgar:description="EXHIBIT 31.2" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/a2190865zex-31_2.htm" />
+          <edgar:xbrlFile edgar:sequence="9" edgar:file="a2190865zex-32_1.htm" edgar:type="EX-32.1" edgar:size="4970" edgar:description="EXHIBIT 32.1" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/a2190865zex-32_1.htm" />
+          <edgar:xbrlFile edgar:sequence="10" edgar:file="a2190865zex-32_2.htm" edgar:type="EX-32.2" edgar:size="4990" edgar:description="EXHIBIT 32.2" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/a2190865zex-32_2.htm" />
+          <edgar:xbrlFile edgar:sequence="11" edgar:file="flr-20081231.xml" edgar:type="EX-100.INS" edgar:size="729280" edgar:description="EX-100.INS" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/flr-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="12" edgar:file="flr-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="15006" edgar:description="EX-100.SCH" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/flr-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="13" edgar:file="flr-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="85990" edgar:description="EX-100.CAL" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/flr-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="14" edgar:file="flr-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="328752" edgar:description="EX-100.LAB" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/flr-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="15" edgar:file="flr-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="154659" edgar:description="EX-100.PRE" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/flr-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="16" edgar:file="flr-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="37706" edgar:description="EX-100.DEF" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/flr-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="17" edgar:file="g136260.jpg" edgar:type="GRAPHIC" edgar:size="7909" edgar:description="G136260.JPG" edgar:url="http://www.sec.gov/Archives/edgar/data/1124198/000104746909001811/g136260.jpg" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>COCA COLA ENTERPRISES INC (0000804055) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/804055/000119312509036025/0001193125-09-036025-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Tue, 24 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>COCA COLA ENTERPRISES INC</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/24/2009</edgar:filingDate>
+        <edgar:cikNumber>0000804055</edgar:cikNumber>
+        <edgar:accessionNumber>0001193125-09-036025</edgar:accessionNumber>
+        <edgar:fileNumber>001-09300</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090224000000</edgar:acceptanceDatetime>
+        <edgar:period>20090224</edgar:period>
+        <edgar:assistantDirector>9</edgar:assistantDirector>
+        <edgar:assignedSic>2086</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1020</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d8k.htm" edgar:type="8-K" edgar:size="16050" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/804055/000119312509036025/d8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="cce-20081231.xml" edgar:type="EX-100.INS" edgar:size="78323" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/804055/000119312509036025/cce-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="cce-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="5725" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/804055/000119312509036025/cce-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="cce-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="36731" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/804055/000119312509036025/cce-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="cce-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="61145" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/804055/000119312509036025/cce-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="cce-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="74145" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/804055/000119312509036025/cce-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="cce-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="64523" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/804055/000119312509036025/cce-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="8" edgar:file="g13868g57v27.jpg" edgar:type="GRAPHIC" edgar:size="2875" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/804055/000119312509036025/g13868g57v27.jpg" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>FOREST LABORATORIES INC (0000038074) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/38074/000003807409000011/0000038074-09-000011-index.htm</link>
+      <description>8-K/A</description>
+      <pubDate>Tue, 24 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>FOREST LABORATORIES INC</edgar:companyName>
+        <edgar:formType>8-K/A</edgar:formType>
+        <edgar:filingDate>02/24/2009</edgar:filingDate>
+        <edgar:cikNumber>0000038074</edgar:cikNumber>
+        <edgar:accessionNumber>0000038074-09-000011</edgar:accessionNumber>
+        <edgar:fileNumber>001-05438</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090224000000</edgar:acceptanceDatetime>
+        <edgar:period>20081231</edgar:period>
+        <edgar:assistantDirector>1</edgar:assistantDirector>
+        <edgar:assignedSic>2834</edgar:assignedSic>
+        <edgar:fiscalYearEnd>0331</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="forest8kadec08xbrl.htm" edgar:type="8-K/A" edgar:size="29334" edgar:description="FOREST 8-K/A DECEMBER 31, 2008" edgar:url="http://www.sec.gov/Archives/edgar/data/38074/000003807409000011/forest8kadec08xbrl.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="frx-20081231.xml" edgar:type="EX-100.INS" edgar:size="187601" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/38074/000003807409000011/frx-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="frx-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="5496" edgar:description="XBRL TAXONOMY SCHEMA DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/38074/000003807409000011/frx-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="frx-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="59800" edgar:description="XBRL TAXONOMY PRESENTATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/38074/000003807409000011/frx-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="frx-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="83002" edgar:description="XBRL TAXONOMY LABEL LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/38074/000003807409000011/frx-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="frx-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="33529" edgar:description="XBRL TAXONOMY CALCULATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/38074/000003807409000011/frx-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="frx-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="2051" edgar:description="XBRL TAXONOMOY EXTENSION DEFINITION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/38074/000003807409000011/frx-20081231_def.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>ICU MEDICAL INC/DE (0000883984) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/0001104659-09-011827-index.htm</link>
+      <description>10-K/A</description>
+      <pubDate>Tue, 24 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>ICU MEDICAL INC/DE</edgar:companyName>
+        <edgar:formType>10-K/A</edgar:formType>
+        <edgar:filingDate>02/24/2009</edgar:filingDate>
+        <edgar:cikNumber>0000883984</edgar:cikNumber>
+        <edgar:accessionNumber>0001104659-09-011827</edgar:accessionNumber>
+        <edgar:fileNumber>000-19974</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090224000000</edgar:acceptanceDatetime>
+        <edgar:period>20081231</edgar:period>
+        <edgar:assistantDirector>10</edgar:assistantDirector>
+        <edgar:assignedSic>3841</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="a09-1720_110ka.htm" edgar:type="10-K/A" edgar:size="1784995" edgar:description="10-K/A" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/a09-1720_110ka.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="a09-1720_1ex10d23.htm" edgar:type="EX-10.23" edgar:size="12976" edgar:description="EX-10.23" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/a09-1720_1ex10d23.htm" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="a09-1720_1ex10d24.htm" edgar:type="EX-10.24" edgar:size="2465" edgar:description="EX-10.24" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/a09-1720_1ex10d24.htm" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="a09-1720_1ex21.htm" edgar:type="EX-21" edgar:size="13997" edgar:description="EX-21" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/a09-1720_1ex21.htm" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="a09-1720_1ex23d1.htm" edgar:type="EX-23.1" edgar:size="3084" edgar:description="EX-23.1" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/a09-1720_1ex23d1.htm" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="a09-1720_1ex23d2.htm" edgar:type="EX-23.2" edgar:size="3220" edgar:description="EX-23.2" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/a09-1720_1ex23d2.htm" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="a09-1720_1ex31d1.htm" edgar:type="EX-31.1" edgar:size="11350" edgar:description="EX-31.1" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/a09-1720_1ex31d1.htm" />
+          <edgar:xbrlFile edgar:sequence="8" edgar:file="a09-1720_1ex31d2.htm" edgar:type="EX-31.2" edgar:size="11389" edgar:description="EX-31.2" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/a09-1720_1ex31d2.htm" />
+          <edgar:xbrlFile edgar:sequence="9" edgar:file="a09-1720_1ex32.htm" edgar:type="EX-32" edgar:size="7638" edgar:description="EX-32" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/a09-1720_1ex32.htm" />
+          <edgar:xbrlFile edgar:sequence="10" edgar:file="icui-20081231.xml" edgar:type="EX-100.INS" edgar:size="78619" edgar:description="EX-100.INS" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/icui-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="11" edgar:file="icui-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="7284" edgar:description="EX-100.SCH" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/icui-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="12" edgar:file="icui-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="43710" edgar:description="EX-100.CAL" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/icui-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="13" edgar:file="icui-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="130409" edgar:description="EX-100.LAB" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/icui-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="14" edgar:file="icui-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="95254" edgar:description="EX-100.PRE" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/icui-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="15" edgar:file="icui-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="24815" edgar:description="EX-100.DEF" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/icui-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="16" edgar:file="g17201bgi001.gif" edgar:type="GRAPHIC" edgar:size="24329" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011827/g17201bgi001.gif" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>ULTRA PETROLEUM CORP (0001022646) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/0000950129-09-000482-index.htm</link>
+      <description>10-K</description>
+      <pubDate>Mon, 23 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>ULTRA PETROLEUM CORP</edgar:companyName>
+        <edgar:formType>10-K</edgar:formType>
+        <edgar:filingDate>02/23/2009</edgar:filingDate>
+        <edgar:cikNumber>0001022646</edgar:cikNumber>
+        <edgar:accessionNumber>0000950129-09-000482</edgar:accessionNumber>
+        <edgar:fileNumber>001-33614</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090223000000</edgar:acceptanceDatetime>
+        <edgar:period>20081231</edgar:period>
+        <edgar:assistantDirector>4</edgar:assistantDirector>
+        <edgar:assignedSic>1311</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="h65781e10vk.htm" edgar:type="10-K" edgar:size="1365562" edgar:description="FORM 10-K" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/h65781e10vk.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="h65781exv10w10.htm" edgar:type="EX-10.10" edgar:size="30494" edgar:description="EX-10.10" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/h65781exv10w10.htm" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="h65781exv10w11.htm" edgar:type="EX-10.11" edgar:size="31632" edgar:description="EX-10.11" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/h65781exv10w11.htm" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="h65781exv23w1.htm" edgar:type="EX-23.1" edgar:size="2450" edgar:description="EX-23.1" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/h65781exv23w1.htm" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="h65781exv23w2.htm" edgar:type="EX-23.2" edgar:size="2257" edgar:description="EX-23.2" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/h65781exv23w2.htm" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="h65781exv23w3.htm" edgar:type="EX-23.3" edgar:size="3736" edgar:description="EX-23.3" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/h65781exv23w3.htm" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="h65781exv31w1.htm" edgar:type="EX-31.1" edgar:size="6047" edgar:description="EX-31.1" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/h65781exv31w1.htm" />
+          <edgar:xbrlFile edgar:sequence="8" edgar:file="h65781exv31w2.htm" edgar:type="EX-31.2" edgar:size="6028" edgar:description="EX-31.2" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/h65781exv31w2.htm" />
+          <edgar:xbrlFile edgar:sequence="9" edgar:file="h65781exv32w1.htm" edgar:type="EX-32.1" edgar:size="3213" edgar:description="EX-32.1" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/h65781exv32w1.htm" />
+          <edgar:xbrlFile edgar:sequence="10" edgar:file="h65781exv32w2.htm" edgar:type="EX-32.2" edgar:size="3174" edgar:description="EX-32.2" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/h65781exv32w2.htm" />
+          <edgar:xbrlFile edgar:sequence="11" edgar:file="upl-20081231.xml" edgar:type="EX-100.INS" edgar:size="748585" edgar:description="INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/upl-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="12" edgar:file="upl-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="15835" edgar:description="SCHEMA DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/upl-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="13" edgar:file="upl-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="12590" edgar:description="CALCULATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/upl-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="14" edgar:file="upl-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="118414" edgar:description="LABELS LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/upl-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="15" edgar:file="upl-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="616034" edgar:description="PRESENTATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/upl-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="16" edgar:file="upl-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="7433" edgar:description="DEFINITION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/upl-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="17" edgar:file="h65781h6578101.gif" edgar:type="GRAPHIC" edgar:size="10552" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/1022646/000095012909000482/h65781h6578101.gif" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>ICU MEDICAL INC/DE (0000883984) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/0001104659-09-011196-index.htm</link>
+      <description>10-K</description>
+      <pubDate>Fri, 20 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>ICU MEDICAL INC/DE</edgar:companyName>
+        <edgar:formType>10-K</edgar:formType>
+        <edgar:filingDate>02/20/2009</edgar:filingDate>
+        <edgar:cikNumber>0000883984</edgar:cikNumber>
+        <edgar:accessionNumber>0001104659-09-011196</edgar:accessionNumber>
+        <edgar:fileNumber>000-19974</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090220000000</edgar:acceptanceDatetime>
+        <edgar:period>20081231</edgar:period>
+        <edgar:assistantDirector>10</edgar:assistantDirector>
+        <edgar:assignedSic>3841</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="a09-1720_110k.htm" edgar:type="10-K" edgar:size="1783207" edgar:description="10-K" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/a09-1720_110k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="a09-1720_1ex10d23.htm" edgar:type="EX-10.23" edgar:size="12976" edgar:description="EX-10.23" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/a09-1720_1ex10d23.htm" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="a09-1720_1ex10d24.htm" edgar:type="EX-10.24" edgar:size="2465" edgar:description="EX-10.24" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/a09-1720_1ex10d24.htm" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="a09-1720_1ex21.htm" edgar:type="EX-21" edgar:size="13997" edgar:description="EX-21" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/a09-1720_1ex21.htm" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="a09-1720_1ex23d1.htm" edgar:type="EX-23.1" edgar:size="3065" edgar:description="EX-23.1" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/a09-1720_1ex23d1.htm" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="a09-1720_1ex23d2.htm" edgar:type="EX-23.2" edgar:size="3066" edgar:description="EX-23.2" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/a09-1720_1ex23d2.htm" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="a09-1720_1ex31d1.htm" edgar:type="EX-31.1" edgar:size="11335" edgar:description="EX-31.1" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/a09-1720_1ex31d1.htm" />
+          <edgar:xbrlFile edgar:sequence="8" edgar:file="a09-1720_1ex31d2.htm" edgar:type="EX-31.2" edgar:size="11374" edgar:description="EX-31.2" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/a09-1720_1ex31d2.htm" />
+          <edgar:xbrlFile edgar:sequence="9" edgar:file="a09-1720_1ex32.htm" edgar:type="EX-32" edgar:size="7599" edgar:description="EX-32" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/a09-1720_1ex32.htm" />
+          <edgar:xbrlFile edgar:sequence="10" edgar:file="icui-20081231.xml" edgar:type="EX-100.INS" edgar:size="78619" edgar:description="EX-100.INS" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/icui-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="11" edgar:file="icui-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="7284" edgar:description="EX-100.SCH" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/icui-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="12" edgar:file="icui-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="43710" edgar:description="EX-100.CAL" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/icui-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="13" edgar:file="icui-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="130409" edgar:description="EX-100.LAB" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/icui-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="14" edgar:file="icui-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="95254" edgar:description="EX-100.PRE" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/icui-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="15" edgar:file="icui-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="24815" edgar:description="EX-100.DEF" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/icui-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="16" edgar:file="g17201bgi001.gif" edgar:type="GRAPHIC" edgar:size="24329" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/883984/000110465909011196/g17201bgi001.gif" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>BROADRIDGE FINANCIAL SOLUTIONS, INC. (0001383312) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/1383312/000119312509033722/0001193125-09-033722-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Fri, 20 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>BROADRIDGE FINANCIAL SOLUTIONS, INC.</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/20/2009</edgar:filingDate>
+        <edgar:cikNumber>0001383312</edgar:cikNumber>
+        <edgar:accessionNumber>0001193125-09-033722</edgar:accessionNumber>
+        <edgar:fileNumber>001-33220</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090220000000</edgar:acceptanceDatetime>
+        <edgar:period>20090220</edgar:period>
+        <edgar:assistantDirector>7</edgar:assistantDirector>
+        <edgar:assignedSic>6199</edgar:assignedSic>
+        <edgar:fiscalYearEnd>0630</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d8k.htm" edgar:type="8-K" edgar:size="15046" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/1383312/000119312509033722/d8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="br-20081231.xml" edgar:type="EX-100.INS" edgar:size="192762" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1383312/000119312509033722/br-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="br-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="6071" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/1383312/000119312509033722/br-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="br-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="70551" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1383312/000119312509033722/br-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="br-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="77674" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1383312/000119312509033722/br-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="br-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="118385" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1383312/000119312509033722/br-20081231_pre.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>NEWMONT MINING CORP /DE/ (0001164727) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/0000950134-09-003236-index.htm</link>
+      <description>10-K</description>
+      <pubDate>Thu, 19 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>NEWMONT MINING CORP /DE/</edgar:companyName>
+        <edgar:formType>10-K</edgar:formType>
+        <edgar:filingDate>02/19/2009</edgar:filingDate>
+        <edgar:cikNumber>0001164727</edgar:cikNumber>
+        <edgar:accessionNumber>0000950134-09-003236</edgar:accessionNumber>
+        <edgar:fileNumber>001-31240</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090219000000</edgar:acceptanceDatetime>
+        <edgar:period>20081231</edgar:period>
+        <edgar:assistantDirector>9</edgar:assistantDirector>
+        <edgar:assignedSic>1040</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d65086e10vk.htm" edgar:type="10-K" edgar:size="3493733" edgar:description="FORM 10-K" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086e10vk.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="d65086exv10w1.htm" edgar:type="EX-10.1" edgar:size="121028" edgar:description="EX-10.1" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086exv10w1.htm" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="d65086exv10w2.htm" edgar:type="EX-10.2" edgar:size="91825" edgar:description="EX-10.2" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086exv10w2.htm" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="d65086exv10w13.htm" edgar:type="EX-10.13" edgar:size="18737" edgar:description="EX-10.13" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086exv10w13.htm" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="d65086exv10w14.htm" edgar:type="EX-10.14" edgar:size="32770" edgar:description="EX-10.14" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086exv10w14.htm" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="d65086exv10w20.htm" edgar:type="EX-10.20" edgar:size="96167" edgar:description="EX-10.20" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086exv10w20.htm" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="d65086exv10w24.htm" edgar:type="EX-10.24" edgar:size="12719" edgar:description="EX-10.24" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086exv10w24.htm" />
+          <edgar:xbrlFile edgar:sequence="8" edgar:file="d65086exv12w1.htm" edgar:type="EX-12.1" edgar:size="17175" edgar:description="EX-12.1" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086exv12w1.htm" />
+          <edgar:xbrlFile edgar:sequence="9" edgar:file="d65086exv21.htm" edgar:type="EX-21" edgar:size="63204" edgar:description="EX-21" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086exv21.htm" />
+          <edgar:xbrlFile edgar:sequence="10" edgar:file="d65086exv23w1.htm" edgar:type="EX-23.1" edgar:size="1373" edgar:description="EX-23.1" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086exv23w1.htm" />
+          <edgar:xbrlFile edgar:sequence="11" edgar:file="d65086exv24.htm" edgar:type="EX-24" edgar:size="12500" edgar:description="EX-24" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086exv24.htm" />
+          <edgar:xbrlFile edgar:sequence="12" edgar:file="d65086exv31w1.htm" edgar:type="EX-31.1" edgar:size="6364" edgar:description="EX-31.1" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086exv31w1.htm" />
+          <edgar:xbrlFile edgar:sequence="13" edgar:file="d65086exv31w2.htm" edgar:type="EX-31.2" edgar:size="6334" edgar:description="EX-31.2" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086exv31w2.htm" />
+          <edgar:xbrlFile edgar:sequence="14" edgar:file="d65086exv32w1.htm" edgar:type="EX-32.1" edgar:size="3192" edgar:description="EX-32.1" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086exv32w1.htm" />
+          <edgar:xbrlFile edgar:sequence="15" edgar:file="d65086exv32w2.htm" edgar:type="EX-32.2" edgar:size="3165" edgar:description="EX-32.2" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086exv32w2.htm" />
+          <edgar:xbrlFile edgar:sequence="16" edgar:file="nem-20081231.xml" edgar:type="EX-100.INS" edgar:size="2066534" edgar:description="INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/nem-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="17" edgar:file="nem-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="16739" edgar:description="SCHEMA DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/nem-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="18" edgar:file="nem-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="12280" edgar:description="CALCULATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/nem-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="19" edgar:file="nem-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="138196" edgar:description="LABELS LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/nem-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="20" edgar:file="nem-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="130709" edgar:description="PRESENTATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/nem-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="21" edgar:file="nem-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="8296" edgar:description="DEFINITION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/nem-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="22" edgar:file="d65086d6508607.gif" edgar:type="GRAPHIC" edgar:size="62165" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086d6508607.gif" />
+          <edgar:xbrlFile edgar:sequence="23" edgar:file="d65086d6508601.gif" edgar:type="GRAPHIC" edgar:size="5452" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086d6508601.gif" />
+          <edgar:xbrlFile edgar:sequence="24" edgar:file="d65086d6508604.gif" edgar:type="GRAPHIC" edgar:size="6952" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086d6508604.gif" />
+          <edgar:xbrlFile edgar:sequence="25" edgar:file="d65086d6508605.gif" edgar:type="GRAPHIC" edgar:size="6860" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086d6508605.gif" />
+          <edgar:xbrlFile edgar:sequence="26" edgar:file="d65086d6508606.gif" edgar:type="GRAPHIC" edgar:size="6815" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/1164727/000095013409003236/d65086d6508606.gif" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>PEPSICO INC (0000077476) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/77476/000119312509033135/0001193125-09-033135-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Thu, 19 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>PEPSICO INC</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/19/2009</edgar:filingDate>
+        <edgar:cikNumber>0000077476</edgar:cikNumber>
+        <edgar:accessionNumber>0001193125-09-033135</edgar:accessionNumber>
+        <edgar:fileNumber>001-01183</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090219000000</edgar:acceptanceDatetime>
+        <edgar:period>20090219</edgar:period>
+        <edgar:assistantDirector>9</edgar:assistantDirector>
+        <edgar:assignedSic>2080</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1229</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d8k.htm" edgar:type="8-K" edgar:size="16240" edgar:description="CURRENT REPORT" edgar:url="http://www.sec.gov/Archives/edgar/data/77476/000119312509033135/d8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="pep-20081227.xml" edgar:type="EX-100.INS" edgar:size="97948" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/77476/000119312509033135/pep-20081227.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="pep-20081227.xsd" edgar:type="EX-100.SCH" edgar:size="8659" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/77476/000119312509033135/pep-20081227.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="pep-20081227_cal.xml" edgar:type="EX-100.CAL" edgar:size="44908" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/77476/000119312509033135/pep-20081227_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="pep-20081227_def.xml" edgar:type="EX-100.DEF" edgar:size="74150" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/77476/000119312509033135/pep-20081227_def.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="pep-20081227_lab.xml" edgar:type="EX-100.LAB" edgar:size="96449" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/77476/000119312509033135/pep-20081227_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="pep-20081227_pre.xml" edgar:type="EX-100.PRE" edgar:size="78972" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/77476/000119312509033135/pep-20081227_pre.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>CONSOL ENERGY INC (0001070412) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/1070412/000119312509032100/0001193125-09-032100-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Wed, 18 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>CONSOL ENERGY INC</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/18/2009</edgar:filingDate>
+        <edgar:cikNumber>0001070412</edgar:cikNumber>
+        <edgar:accessionNumber>0001193125-09-032100</edgar:accessionNumber>
+        <edgar:fileNumber>001-14901</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090218000000</edgar:acceptanceDatetime>
+        <edgar:period>20090217</edgar:period>
+        <edgar:assistantDirector>9</edgar:assistantDirector>
+        <edgar:assignedSic>1221</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d8k.htm" edgar:type="8-K" edgar:size="15878" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/1070412/000119312509032100/d8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="cnx-20081231.xml" edgar:type="EX-100.INS" edgar:size="1922178" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1070412/000119312509032100/cnx-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="cnx-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="13295" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/1070412/000119312509032100/cnx-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="cnx-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="45597" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1070412/000119312509032100/cnx-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="cnx-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="78514" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1070412/000119312509032100/cnx-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="cnx-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="126758" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1070412/000119312509032100/cnx-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="cnx-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="98041" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1070412/000119312509032100/cnx-20081231_pre.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>CNX Gas CORP (0001335793) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/1335793/000119312509032097/0001193125-09-032097-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Wed, 18 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>CNX Gas CORP</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/18/2009</edgar:filingDate>
+        <edgar:cikNumber>0001335793</edgar:cikNumber>
+        <edgar:accessionNumber>0001193125-09-032097</edgar:accessionNumber>
+        <edgar:fileNumber>001-32723</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090218000000</edgar:acceptanceDatetime>
+        <edgar:period>20090217</edgar:period>
+        <edgar:assistantDirector>4</edgar:assistantDirector>
+        <edgar:assignedSic>1311</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d8k.htm" edgar:type="8-K" edgar:size="16227" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/1335793/000119312509032097/d8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="cxg-20081231.xml" edgar:type="EX-100.INS" edgar:size="942553" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1335793/000119312509032097/cxg-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="cxg-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="8661" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/1335793/000119312509032097/cxg-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="cxg-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="40758" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1335793/000119312509032097/cxg-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="cxg-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="71993" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1335793/000119312509032097/cxg-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="cxg-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="105525" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1335793/000119312509032097/cxg-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="cxg-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="85365" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1335793/000119312509032097/cxg-20081231_pre.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>UNITEDHEALTH GROUP INC (0000731766) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/731766/000119312509032202/0001193125-09-032202-index.htm</link>
+      <description>8-K/A</description>
+      <pubDate>Wed, 18 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>UNITEDHEALTH GROUP INC</edgar:companyName>
+        <edgar:formType>8-K/A</edgar:formType>
+        <edgar:filingDate>02/18/2009</edgar:filingDate>
+        <edgar:cikNumber>0000731766</edgar:cikNumber>
+        <edgar:accessionNumber>0001193125-09-032202</edgar:accessionNumber>
+        <edgar:fileNumber>001-10864</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090218000000</edgar:acceptanceDatetime>
+        <edgar:period>20090211</edgar:period>
+        <edgar:assistantDirector>1</edgar:assistantDirector>
+        <edgar:assignedSic>6324</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d8ka.htm" edgar:type="8-K/A" edgar:size="17178" edgar:description="AMENDMENT NO.1 TO FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/731766/000119312509032202/d8ka.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="unh-20081231.xml" edgar:type="EX-100.INS" edgar:size="823183" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/731766/000119312509032202/unh-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="unh-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="10436" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/731766/000119312509032202/unh-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="unh-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="84796" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/731766/000119312509032202/unh-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="unh-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="132937" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/731766/000119312509032202/unh-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="unh-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="102324" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/731766/000119312509032202/unh-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="unh-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="149620" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/731766/000119312509032202/unh-20081231_pre.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>AMEDISYS INC (0000896262) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/896262/000119312509031153/0001193125-09-031153-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Tue, 17 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>AMEDISYS INC</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/17/2009</edgar:filingDate>
+        <edgar:cikNumber>0000896262</edgar:cikNumber>
+        <edgar:accessionNumber>0001193125-09-031153</edgar:accessionNumber>
+        <edgar:fileNumber>000-24260</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090217000000</edgar:acceptanceDatetime>
+        <edgar:period>20090217</edgar:period>
+        <edgar:assistantDirector>9</edgar:assistantDirector>
+        <edgar:assignedSic>8082</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d8k.htm" edgar:type="8-K" edgar:size="19937" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/896262/000119312509031153/d8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="amed-20081231.xml" edgar:type="EX-100.INS" edgar:size="566243" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/896262/000119312509031153/amed-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="amed-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="10786" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/896262/000119312509031153/amed-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="amed-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="45577" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/896262/000119312509031153/amed-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="amed-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="80949" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/896262/000119312509031153/amed-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="amed-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="115094" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/896262/000119312509031153/amed-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="amed-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="92596" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/896262/000119312509031153/amed-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="8" edgar:file="g92565g64s23.jpg" edgar:type="GRAPHIC" edgar:size="3441" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/896262/000119312509031153/g92565g64s23.jpg" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>NEWS CORP (0001308161) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/1308161/000119312509029055/0001193125-09-029055-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Fri, 13 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>NEWS CORP</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/13/2009</edgar:filingDate>
+        <edgar:cikNumber>0001308161</edgar:cikNumber>
+        <edgar:accessionNumber>0001193125-09-029055</edgar:accessionNumber>
+        <edgar:fileNumber>001-32352</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090213000000</edgar:acceptanceDatetime>
+        <edgar:period>20090213</edgar:period>
+        <edgar:assistantDirector>5</edgar:assistantDirector>
+        <edgar:assignedSic>2711</edgar:assignedSic>
+        <edgar:fiscalYearEnd>0630</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d8k.htm" edgar:type="8-K" edgar:size="16849" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/1308161/000119312509029055/d8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="nws-20081231.xml" edgar:type="EX-100.INS" edgar:size="40878" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1308161/000119312509029055/nws-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="nws-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="10616" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/1308161/000119312509029055/nws-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="nws-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="31363" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1308161/000119312509029055/nws-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="nws-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="6594" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1308161/000119312509029055/nws-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="nws-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="79478" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1308161/000119312509029055/nws-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="nws-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="40016" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/1308161/000119312509029055/nws-20081231_pre.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>ASML HOLDING NV (0000937966) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/937966/000095012309002439/0000950123-09-002439-index.htm</link>
+      <description>6-K</description>
+      <pubDate>Wed, 11 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>ASML HOLDING NV</edgar:companyName>
+        <edgar:formType>6-K</edgar:formType>
+        <edgar:filingDate>02/11/2009</edgar:filingDate>
+        <edgar:cikNumber>0000937966</edgar:cikNumber>
+        <edgar:accessionNumber>0000950123-09-002439</edgar:accessionNumber>
+        <edgar:fileNumber>001-33463</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090211000000</edgar:acceptanceDatetime>
+        <edgar:period>20090211</edgar:period>
+        <edgar:assistantDirector>10</edgar:assistantDirector>
+        <edgar:assignedSic>3559</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="u06049e6vk.htm" edgar:type="6-K" edgar:size="10173" edgar:description="FORM 6-K" edgar:url="http://www.sec.gov/Archives/edgar/data/937966/000095012309002439/u06049e6vk.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="asml-20081231.xml" edgar:type="EX-100.INS" edgar:size="1165070" edgar:description="INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/937966/000095012309002439/asml-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="asml-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="14460" edgar:description="SCHEMA DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/937966/000095012309002439/asml-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="asml-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="7322" edgar:description="CALCULATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/937966/000095012309002439/asml-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="asml-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="102029" edgar:description="LABELS LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/937966/000095012309002439/asml-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="asml-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="90577" edgar:description="PRESENTATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/937966/000095012309002439/asml-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="asml-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="9939" edgar:description="DEFINITION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/937966/000095012309002439/asml-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="8" edgar:file="u06049u0604901.gif" edgar:type="GRAPHIC" edgar:size="3377" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/937966/000095012309002439/u06049u0604901.gif" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>UNITEDHEALTH GROUP INC (0000731766) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/731766/000119312509025597/0001193125-09-025597-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Wed, 11 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>UNITEDHEALTH GROUP INC</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/11/2009</edgar:filingDate>
+        <edgar:cikNumber>0000731766</edgar:cikNumber>
+        <edgar:accessionNumber>0001193125-09-025597</edgar:accessionNumber>
+        <edgar:fileNumber>001-10864</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090211000000</edgar:acceptanceDatetime>
+        <edgar:period>20090211</edgar:period>
+        <edgar:assistantDirector>1</edgar:assistantDirector>
+        <edgar:assignedSic>6324</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d8k.htm" edgar:type="8-K" edgar:size="16388" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/731766/000119312509025597/d8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="unh-20081231.xml" edgar:type="EX-100.INS" edgar:size="819149" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/731766/000119312509025597/unh-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="unh-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="10746" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/731766/000119312509025597/unh-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="unh-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="84328" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/731766/000119312509025597/unh-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="unh-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="131910" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/731766/000119312509025597/unh-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="unh-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="103194" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/731766/000119312509025597/unh-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="unh-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="148531" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/731766/000119312509025597/unh-20081231_pre.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>UNITED TECHNOLOGIES CORP /DE/ (0000101829) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/0001193125-09-024624-index.htm</link>
+      <description>10-K</description>
+      <pubDate>Wed, 11 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>UNITED TECHNOLOGIES CORP /DE/</edgar:companyName>
+        <edgar:formType>10-K</edgar:formType>
+        <edgar:filingDate>02/11/2009</edgar:filingDate>
+        <edgar:cikNumber>0000101829</edgar:cikNumber>
+        <edgar:accessionNumber>0001193125-09-024624</edgar:accessionNumber>
+        <edgar:fileNumber>001-00812</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090211000000</edgar:acceptanceDatetime>
+        <edgar:period>20081231</edgar:period>
+        <edgar:assistantDirector>5</edgar:assistantDirector>
+        <edgar:assignedSic>3724</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d10k.htm" edgar:type="10-K" edgar:size="311085" edgar:description="10-K" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/d10k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="dex101.htm" edgar:type="EX-10.1" edgar:size="5027" edgar:description="UTC ANNUAL EXECUTIVE INCENTIVE COMPENSATION PLAN" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex101.htm" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="dex103.htm" edgar:type="EX-10.3" edgar:size="115428" edgar:description="UTC PENSION PRESERVATION PLAN" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex103.htm" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="dex105.htm" edgar:type="EX-10.5" edgar:size="118111" edgar:description="UTC DEFERRED COMPENSATION PLAN" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex105.htm" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="dex1028.htm" edgar:type="EX-10.28" edgar:size="26786" edgar:description="SCHEDULE OF TERMS FOR PERFORMANCE SHARE UNIT AWARDS" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex1028.htm" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="dex1029.htm" edgar:type="EX-10.29" edgar:size="25686" edgar:description="SCHEDULE OF TERMS FOR STOCK APPRECIATION RIGHTS AWARDS" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex1029.htm" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="dex1035.htm" edgar:type="EX-10.35" edgar:size="42417" edgar:description="UTC INTERNATIONAL DEFERRED COMPENSATION REPLACEMENT PLAN" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex1035.htm" />
+          <edgar:xbrlFile edgar:sequence="8" edgar:file="dex1036.htm" edgar:type="EX-10.36" edgar:size="66121" edgar:description="UTC LTIP PERFORMANCE SHARE UNIT DEFERRAL PLAN" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex1036.htm" />
+          <edgar:xbrlFile edgar:sequence="9" edgar:file="dex11.htm" edgar:type="EX-11" edgar:size="19133" edgar:description="STATEMENT RE: COMPUTATIONS OF PER SHARE EARNINGS" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex11.htm" />
+          <edgar:xbrlFile edgar:sequence="10" edgar:file="dex12.htm" edgar:type="EX-12" edgar:size="32469" edgar:description="STATEMENT RE: COMPUTATION OF RATIOS" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex12.htm" />
+          <edgar:xbrlFile edgar:sequence="11" edgar:file="dex13.htm" edgar:type="EX-13" edgar:size="1401894" edgar:description="ANNUAL REPORT FOR THE YEAR ENDED DECEMBER 31, 2008" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex13.htm" />
+          <edgar:xbrlFile edgar:sequence="12" edgar:file="dex21.htm" edgar:type="EX-21" edgar:size="35752" edgar:description="SUBSIDIARIES  OF THE REGISTRANT" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex21.htm" />
+          <edgar:xbrlFile edgar:sequence="13" edgar:file="dex23.htm" edgar:type="EX-23" edgar:size="2160" edgar:description="CONSENT OF PRICEWATERHOUSECOOPERS LLP" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex23.htm" />
+          <edgar:xbrlFile edgar:sequence="14" edgar:file="dex24.htm" edgar:type="EX-24" edgar:size="31807" edgar:description="POWERS OF ATTORNEY" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex24.htm" />
+          <edgar:xbrlFile edgar:sequence="15" edgar:file="dex31.htm" edgar:type="EX-31" edgar:size="27285" edgar:description="RULE 13A-14(A )/ 15D-14(A) CERTIFICATIONS" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex31.htm" />
+          <edgar:xbrlFile edgar:sequence="16" edgar:file="dex32.htm" edgar:type="EX-32" edgar:size="5175" edgar:description="SECTION 1350 CERTIFICATIONS" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/dex32.htm" />
+          <edgar:xbrlFile edgar:sequence="17" edgar:file="utx-20081231.xml" edgar:type="EX-100.INS" edgar:size="811336" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/utx-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="18" edgar:file="utx-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="8973" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/utx-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="19" edgar:file="utx-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="315447" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/utx-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="20" edgar:file="utx-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="7374" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/utx-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="21" edgar:file="utx-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="74338" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/utx-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="22" edgar:file="utx-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="356180" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/utx-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="23" edgar:file="g20041g64o25.jpg" edgar:type="GRAPHIC" edgar:size="44378" edgar:description="GRAPHIC" edgar:url="http://www.sec.gov/Archives/edgar/data/101829/000119312509024624/g20041g64o25.jpg" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>GENERAL MILLS INC (0000040704) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/40704/000095013709000926/0000950137-09-000926-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Tue, 10 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>GENERAL MILLS INC</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/10/2009</edgar:filingDate>
+        <edgar:cikNumber>0000040704</edgar:cikNumber>
+        <edgar:accessionNumber>0000950137-09-000926</edgar:accessionNumber>
+        <edgar:fileNumber>001-01185</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090210000000</edgar:acceptanceDatetime>
+        <edgar:period>20081217</edgar:period>
+        <edgar:assistantDirector>4</edgar:assistantDirector>
+        <edgar:assignedSic>2040</edgar:assignedSic>
+        <edgar:fiscalYearEnd>0531</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="c49043e8vk.htm" edgar:type="8-K" edgar:size="14829" edgar:description="8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/40704/000095013709000926/c49043e8vk.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="gis-20081123.xml" edgar:type="EX-100.INS" edgar:size="65346" edgar:description="INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/40704/000095013709000926/gis-20081123.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="gis-20081123.xsd" edgar:type="EX-100.SCH" edgar:size="11570" edgar:description="SCHEMA DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/40704/000095013709000926/gis-20081123.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="gis-20081123_cal.xml" edgar:type="EX-100.CAL" edgar:size="41262" edgar:description="CALCULATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/40704/000095013709000926/gis-20081123_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="gis-20081123_lab.xml" edgar:type="EX-100.LAB" edgar:size="87712" edgar:description="LABELS LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/40704/000095013709000926/gis-20081123_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="gis-20081123_pre.xml" edgar:type="EX-100.PRE" edgar:size="75442" edgar:description="PRESENTATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/40704/000095013709000926/gis-20081123_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="gis-20081123_def.xml" edgar:type="EX-100.DEF" edgar:size="8783" edgar:description="DEFINITION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/40704/000095013709000926/gis-20081123_def.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>FLEXTRONICS INTERNATIONAL LTD. (0000866374) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/866374/000095013409002330/0000950134-09-002330-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Tue, 10 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>FLEXTRONICS INTERNATIONAL LTD.</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/10/2009</edgar:filingDate>
+        <edgar:cikNumber>0000866374</edgar:cikNumber>
+        <edgar:accessionNumber>0000950134-09-002330</edgar:accessionNumber>
+        <edgar:fileNumber>000-23354</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090210000000</edgar:acceptanceDatetime>
+        <edgar:period>20090210</edgar:period>
+        <edgar:assistantDirector>3</edgar:assistantDirector>
+        <edgar:assignedSic>3672</edgar:assignedSic>
+        <edgar:fiscalYearEnd>0331</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="d66207e8vk.htm" edgar:type="8-K" edgar:size="19536" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/866374/000095013409002330/d66207e8vk.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="flex-20081231.xml" edgar:type="EX-100.INS" edgar:size="35261" edgar:description="INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/866374/000095013409002330/flex-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="flex-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="9783" edgar:description="SCHEMA DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/866374/000095013409002330/flex-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="flex-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="2387" edgar:description="CALCULATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/866374/000095013409002330/flex-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="flex-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="61001" edgar:description="LABELS LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/866374/000095013409002330/flex-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="flex-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="49191" edgar:description="PRESENTATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/866374/000095013409002330/flex-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="flex-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="6257" edgar:description="DEFINITION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/866374/000095013409002330/flex-20081231_def.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>ADOBE SYSTEMS INC (0000796343) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/796343/000079634309000018/0000796343-09-000018-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Mon, 09 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>ADOBE SYSTEMS INC</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/09/2009</edgar:filingDate>
+        <edgar:cikNumber>0000796343</edgar:cikNumber>
+        <edgar:accessionNumber>0000796343-09-000018</edgar:accessionNumber>
+        <edgar:fileNumber>000-15175</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090209000000</edgar:acceptanceDatetime>
+        <edgar:period>20090209</edgar:period>
+        <edgar:assistantDirector>3</edgar:assistantDirector>
+        <edgar:assignedSic>7372</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1130</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="form_8k.htm" edgar:type="8-K" edgar:size="29763" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/796343/000079634309000018/form_8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="adbe-20081216.xml" edgar:type="EX-100.INS" edgar:size="777490" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/796343/000079634309000018/adbe-20081216.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="adbe-20081128.xsd" edgar:type="EX-100.SCH" edgar:size="95723" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/796343/000079634309000018/adbe-20081128.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="adbe-20081128_cal.xml" edgar:type="EX-100.CAL" edgar:size="133994" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/796343/000079634309000018/adbe-20081128_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="adbe-20081128_lab.xml" edgar:type="EX-100.LAB" edgar:size="398530" edgar:description="XBRL TAXONOMY EXTENSION LABELS LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/796343/000079634309000018/adbe-20081128_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="adbe-20081128_pre.xml" edgar:type="EX-100.PRE" edgar:size="352224" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/796343/000079634309000018/adbe-20081128_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="adbe-20081128_def.xml" edgar:type="EX-100.DEF" edgar:size="63180" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/796343/000079634309000018/adbe-20081128_def.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>AUTOMATIC DATA PROCESSING INC (0000008670) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/8670/000000867009000013/0000008670-09-000013-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Mon, 09 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>AUTOMATIC DATA PROCESSING INC</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/09/2009</edgar:filingDate>
+        <edgar:cikNumber>0000008670</edgar:cikNumber>
+        <edgar:accessionNumber>0000008670-09-000013</edgar:accessionNumber>
+        <edgar:fileNumber>001-05397</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090209000000</edgar:acceptanceDatetime>
+        <edgar:period>20081231</edgar:period>
+        <edgar:assistantDirector>3</edgar:assistantDirector>
+        <edgar:assignedSic>7374</edgar:assignedSic>
+        <edgar:fiscalYearEnd>0630</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="dec8k.htm" edgar:type="8-K" edgar:size="22590" edgar:description="FORM 8K" edgar:url="http://www.sec.gov/Archives/edgar/data/8670/000000867009000013/dec8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="asp-20081231.xml" edgar:type="EX-100.INS" edgar:size="53282" edgar:description="XBRL INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/8670/000000867009000013/asp-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="adp-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="14364" edgar:description="XBRL TAXONOMY EXTENSION SCHEMA" edgar:url="http://www.sec.gov/Archives/edgar/data/8670/000000867009000013/adp-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="adp-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="93267" edgar:description="XBRL TAXONOMY EXTENSION PRESENTATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/8670/000000867009000013/adp-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="adp-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="105977" edgar:description="XBRL TAXONOMY EXTENSION LABEL LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/8670/000000867009000013/adp-20081231_lab.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="adp-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="58627" edgar:description="XBRL TAXONOMY EXTENSION CALCULATION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/8670/000000867009000013/adp-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="adp-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="5691" edgar:description="XBRL TAXONOMY EXTENSION DEFINITION LINKBASE" edgar:url="http://www.sec.gov/Archives/edgar/data/8670/000000867009000013/adp-20081231_def.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+    <item>
+      <title>AGL RESOURCES INC (0001004155) (Filer)</title>
+      <link>http://www.sec.gov/Archives/edgar/data/1004155/000100415509000014/0001004155-09-000014-index.htm</link>
+      <description>8-K</description>
+      <pubDate>Thu, 05 Feb 2009 00:00:00 EST</pubDate>
+      <edgar:xbrlFiling xmlns:edgar="http://www.sec.gov/Archives/edgar">
+        <edgar:companyName>AGL RESOURCES INC</edgar:companyName>
+        <edgar:formType>8-K</edgar:formType>
+        <edgar:filingDate>02/05/2009</edgar:filingDate>
+        <edgar:cikNumber>0001004155</edgar:cikNumber>
+        <edgar:accessionNumber>0001004155-09-000014</edgar:accessionNumber>
+        <edgar:fileNumber>001-14174</edgar:fileNumber>
+        <edgar:acceptanceDatetime>20090205000000</edgar:acceptanceDatetime>
+        <edgar:period>20090205</edgar:period>
+        <edgar:assistantDirector>2</edgar:assistantDirector>
+        <edgar:assignedSic>4924</edgar:assignedSic>
+        <edgar:fiscalYearEnd>1231</edgar:fiscalYearEnd>
+        <edgar:xbrlFiles>
+          <edgar:xbrlFile edgar:sequence="1" edgar:file="form8k.htm" edgar:type="8-K" edgar:size="37770" edgar:description="FORM 8-K" edgar:url="http://www.sec.gov/Archives/edgar/data/1004155/000100415509000014/form8k.htm" />
+          <edgar:xbrlFile edgar:sequence="2" edgar:file="atg-20081231.xsd" edgar:type="EX-100.SCH" edgar:size="9434" edgar:description="EXTENSION SCHEMA DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1004155/000100415509000014/atg-20081231.xsd" />
+          <edgar:xbrlFile edgar:sequence="3" edgar:file="atg-20081231.xml" edgar:type="EX-100.INS" edgar:size="1881307" edgar:description="INSTANCE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1004155/000100415509000014/atg-20081231.xml" />
+          <edgar:xbrlFile edgar:sequence="4" edgar:file="atg-20081231_cal.xml" edgar:type="EX-100.CAL" edgar:size="54445" edgar:description="CALCULATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1004155/000100415509000014/atg-20081231_cal.xml" />
+          <edgar:xbrlFile edgar:sequence="5" edgar:file="atg-20081231_def.xml" edgar:type="EX-100.DEF" edgar:size="17484" edgar:description="DEFINITION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1004155/000100415509000014/atg-20081231_def.xml" />
+          <edgar:xbrlFile edgar:sequence="6" edgar:file="atg-20081231_pre.xml" edgar:type="EX-100.PRE" edgar:size="1838252" edgar:description="PRESENTATION LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1004155/000100415509000014/atg-20081231_pre.xml" />
+          <edgar:xbrlFile edgar:sequence="7" edgar:file="atg-20081231_lab.xml" edgar:type="EX-100.LAB" edgar:size="67388" edgar:description="LABEL LINKBASE DOCUMENT" edgar:url="http://www.sec.gov/Archives/edgar/data/1004155/000100415509000014/atg-20081231_lab.xml" />
+        </edgar:xbrlFiles>
+      </edgar:xbrlFiling>
+    </item>
+  </channel>
+</rss>
