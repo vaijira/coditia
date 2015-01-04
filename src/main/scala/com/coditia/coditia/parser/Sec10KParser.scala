@@ -61,7 +61,7 @@ class Sec10KParser(docUri: String) extends Loggable {
     }
   }
 
-  private def createConcept(concept: Concept, state: BalanceSheetState, parent: Long) = {
+  private def createConcept(concept: Concept, ns: String, state: BalanceSheetState, parent: Long) = {
     logger.debug("Creating concept: " + concept.getName)
     val label = concept.getLabelsWithResourceRole(Constants.StandardLabelRole).get(0).getStringValue().trim()
 
@@ -77,7 +77,7 @@ class Sec10KParser(docUri: String) extends Loggable {
 
     val balanceConcept = BalanceSheetConcept.createRecord.
       name(concept.getName).
-      namespace(concept.getNamespace).
+      namespace(ns).
       label(label).
       docLabel(doc).
       kind(assetKind).
@@ -92,6 +92,7 @@ class Sec10KParser(docUri: String) extends Loggable {
     for (relationship <- relationships) {
 
       val concept = relationship.getTarget[Concept]
+
       val newstate = if (concept.getName == "AssetsAbstract")
                        AssetState
                      else if (concept.getName == "LiabilitiesAndStockholdersEquityAbstract")
@@ -102,11 +103,11 @@ class Sec10KParser(docUri: String) extends Loggable {
       if (newstate != UndefinedState)
 
       {
-        logger.debug("Trying to find concept: " + concept.getName)
-        val conceptDB = BalanceSheetConcept.findConcept(concept.getName, concept.getNamespace)
+        logger.debug("Trying to find concept: " + concept.getName + " with ns: " + relationship.getTargetURI)
+        val conceptDB = BalanceSheetConcept.findConcept(concept.getName, relationship.getTargetURI.toString)
 
         val pid = if (conceptDB.isEmpty) {
-          createConcept(concept, newstate, parent)
+          createConcept(concept, relationship.getTargetURI.toString, newstate, parent)
         } else {
           conceptDB.head.idField._1
         }

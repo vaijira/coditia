@@ -43,6 +43,8 @@ class SecParserTest extends FlatSpec with DBTestKit with TestLiftSession with Lo
     val assetConcept = assetConcepts.head
 
     assert(assetConcept.name._1  == "AssetsAbstract", "The first asset must be AssetsAbstract")
+    assert(assetConcept.namespace._1 == "http://taxonomies.xbrl.us/us-gaap/2009/elts/us-gaap-2009-01-31.xsd",
+        "Namespace must be a gaap schema reference")
     assert(assetConcept.isAbstract._1, "Concept should be abstract")
 
     val liabilityConcepts = from(CoditiaSchema.balanceSheetConcept )(c =>
@@ -55,6 +57,8 @@ class SecParserTest extends FlatSpec with DBTestKit with TestLiftSession with Lo
 
     assert(liabilityConcept.name._1  == "LiabilitiesAndStockholdersEquityAbstract",
         "The first liability must be LiabilitiesAndStockholdersEquityAbstract")
+    assert(liabilityConcept.namespace._1 == "http://taxonomies.xbrl.us/us-gaap/2009/elts/us-gaap-2009-01-31.xsd",
+        "Namespace must be a gaap schema reference")
     assert(liabilityConcept.isAbstract._1, "Concept should be abstract")
   }
 
