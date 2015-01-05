@@ -15,6 +15,9 @@ import net.liftweb.squerylrecord.KeyedRecord
 import net.liftweb.squerylrecord.RecordTypeMode._
 import net.liftweb.record.field.{StringField, LongField, TextareaField, EnumField, OptionalLongField, BooleanField}
 import net.liftweb.common.Loggable
+import net.liftweb.json.JsonAST._
+import scala.language.implicitConversions
+
 
 object BalanceSheetConceptEnum extends Enumeration {
   type BalanceSheetConceptEnum = Value
@@ -62,6 +65,25 @@ class BalanceSheetConcept extends Record[BalanceSheetConcept] with KeyedRecord[L
  * Concept companion object
  */
 object BalanceSheetConcept extends BalanceSheetConcept with MetaRecord[BalanceSheetConcept] with Loggable {
+  private implicit val formats =
+    net.liftweb.json.DefaultFormats
+
+  /**
+   * Convert the BalanceSheetConcept to JSON format.  This is
+   * implicit and in the companion object, so
+   * an BalanceSheetConcept can be returned easily from a JSON call
+   */
+  implicit def toJson(concept: BalanceSheetConcept): JValue =
+    concept.asJValue
+
+  /**
+   * Convert a Seq[BalanceSheetConcept] to JSON format.  This is
+   * implicit and in the companion object, so
+   * an BalanceSheetConcept can be returned easily from a JSON call
+   */
+  implicit def toJson(concepts: Seq[BalanceSheetConcept]): JValue =
+    JArray(concepts.map{ _.asJValue}.toList)
+
   def findConcept(name: String, ns: String) = from(CoditiaSchema.balanceSheetConcept)(c =>
           where(c.name === name and c.namespace === ns) select (c))
 
@@ -69,4 +91,5 @@ object BalanceSheetConcept extends BalanceSheetConcept with MetaRecord[BalanceSh
     CoditiaSchema.balanceSheetConcept.insert(concept)
   }
 
+  def findAll = from(CoditiaSchema.balanceSheetConcept)(c => select (c)).toSeq
 }

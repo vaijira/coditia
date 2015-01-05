@@ -9,12 +9,14 @@
  */
 package bootstrap.liftweb
 
+import com.coditia.coditia.lib.BalanceSheetConceptRest
 import net.liftweb.http.{Html5Properties, LiftRules, Req}
 import net.liftweb.sitemap.{Menu, SiteMap}
 import net.liftweb.common.{Loggable, Full}
 import net.liftweb.util.{Props, LiftFlowOfControlException}
 import com.zaxxer.hikari.{HikariConfig, HikariDataSource}
 import org.squeryl.internals.DatabaseAdapter
+
 
 /**
   * A class that's instantiated early and run.  It allows the application
@@ -64,7 +66,7 @@ class Boot extends Loggable {
       }
     })
 
-
+    BalanceSheetConceptRest.init
   }
 
   /* init DB using Hikari Pool */
