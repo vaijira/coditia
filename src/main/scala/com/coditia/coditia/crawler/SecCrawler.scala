@@ -13,6 +13,7 @@ import scala.xml.XML
 import com.coditia.coditia.model.{CoditiaSchema, Company, SecCompany}
 import net.liftweb.squerylrecord.RecordTypeMode._
 import net.liftweb.common.Loggable
+import com.coditia.coditia.parser.Sec10KParser
 
 
 abstract class SecFiling(val kind: String) {
@@ -22,6 +23,9 @@ abstract class SecFiling(val kind: String) {
 case object Filing10K extends SecFiling("10-K") with Loggable {
   override def parse(url: String) = {
     logger.info("Start to parse 10-K filing from url " + url)
+    val parser = new Sec10KParser(url)
+
+    parser.parseBalanceSheet
   }
 }
 
@@ -60,7 +64,8 @@ class SecCrawler extends Loggable {
                         file.attributes.toString.contains("edgar:type=\"EX-100.INS\"")).head
 
       val filingUrl = xbrlFile.attributes.toString.split(" ").find(x => x.startsWith("edgar:url")).head
-      filing.parse(filingUrl.split("=")(1))
+      val dstUrl = filingUrl.split("=")(1).substring(1)
+      filing.parse(dstUrl.dropRight(1))
     }
   }
 }

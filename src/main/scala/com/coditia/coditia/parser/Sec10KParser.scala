@@ -30,15 +30,23 @@ class Sec10KParser(docUri: String) extends Loggable {
   // Depending in which year we are to look for one namespace or other for gaap norms
   private[this] val gaapSchema = (for (l <- schema.getImports
       if (l.getAttribute("namespace").startsWith("http://fasb.org/us-gaap/") ||
-          l.getAttribute("namespace").startsWith("http://xbrl.us/us-gaap/")))
+          l.getAttribute("namespace").startsWith("http://xbrl.us/us-gaap")))
         yield l).head
 
   private val gaapNamespace = gaapSchema.getAttribute("namespace")
 
   private[this] val docMap = Map("http://xbrl.us/us-gaap/2009-01-31" ->
-                         XML.load(getClass.getResource("us-gaap-doc-2009-01-31.xml").getPath()))
+                         XML.load(getClass.getResource("us-gaap-doc-2009-01-31.xml").getPath()),
+                                 "http://xbrl.us/us-gaap/2008-03-31" ->
+                         XML.load(getClass.getResource("us-gaap-doc-2008-03-31.xml").getPath())
+                         )
 
-  private[this] val assetFact: Fact = instance.getFacts(gaapNamespace, "Assets").get(0)
+  private[this] val assetFacts = instance.getFacts(gaapNamespace, "Assets")
+  private[this] val assetFact: Fact = if (assetFacts.isEmpty())
+        instance.getFacts("http://xbrl.us/us-gaap/2008-03-31", "Assets").get(0)
+      else
+        assetFacts.get(0)
+
   private[this] val networks: Networks = repository.store.getMinimalNetworksWithArcrole(
       assetFact.getConcept, Constants.PresentationArcrole)
 
@@ -52,7 +60,7 @@ class Sec10KParser(docUri: String) extends Loggable {
     docMap.get(concept.getTargetNamespace) match {
       case Some(docElem) =>
         (docElem \\ "label" ).
-          find(elem => (elem \ "@id").text == ("lab_" + concept.getName + "_documentation_en-US"))
+          find(elem => elem.attributes.toString.contains("label=\"lab_" + concept.getName + "\""))
             match {
               case Some(elem) => elem.child.text
               case None => ""
@@ -66,6 +74,7 @@ class Sec10KParser(docUri: String) extends Loggable {
     val label = concept.getLabelsWithResourceRole(Constants.StandardLabelRole).get(0).getStringValue().trim()
 
     val doc = getDocFromConcept(concept)
+    logger.debug("doc for concept: "+ doc)
 
     val parentId = if (parent == 0) None else Some(parent)
 
