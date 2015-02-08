@@ -29,7 +29,7 @@ javaOptions in Test ++= Seq(
 )
 
 libraryDependencies ++= {
-  val liftVersion = "2.6-RC2"
+  val liftVersion = "2.6"
   Seq(
     "antlr"                  %  "antlr"                       % "2.7.7",
     "commons-collections"    %  "commons-collections"         % "3.2.1",
@@ -50,6 +50,7 @@ libraryDependencies ++= {
     "org.postgresql"         %  "postgresql"                  % "9.3-1102-jdbc41",
     "org.scalatest"          %% "scalatest"                   % "2.2.1"            % "test",
     "org.scalamock"          %% "scalamock-scalatest-support" % "3.2"              % "test",
+    "org.mockito"            %  "mockito-core"                % "1.10.19"          % "test",
     "org.scala-lang.modules" %% "scala-xml"                   % "1.0.2",
     "xerces"                 %  "xercesImpl"                  % "2.9.1",
     "xml-resolver"           %  "xml-resolver"                % "1.2"
