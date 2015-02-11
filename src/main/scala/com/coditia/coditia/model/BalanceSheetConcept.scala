@@ -35,7 +35,7 @@ class BalanceSheetConcept extends Record[BalanceSheetConcept] with KeyedRecord[L
 
   val name = new StringField(this, 255)
 
-  val label = new StringField(this, 255)
+  val label = new StringField(this, 1024)
 
   val docLabel = new TextareaField(this, 4096)
 

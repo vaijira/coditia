@@ -17,15 +17,15 @@ import com.coditia.coditia.parser.Sec10KParser
 
 
 abstract class SecFiling(val kind: String) {
-  def parse(url: String)
+  def parse(company: SecCompany, url: String)
 }
 
 case object Filing10K extends SecFiling("10-K") with Loggable {
-  override def parse(url: String) = {
+  override def parse(company: SecCompany, url: String) = {
     logger.info("Start to parse 10-K filing from url " + url)
-    val parser = new Sec10KParser(url)
+    val parser = new Sec10KParser(company, url)
 
-    parser.parseBalanceSheet
+    parser.parse
   }
 }
 
@@ -64,8 +64,8 @@ class SecCrawler extends Loggable {
                         file.attributes.toString.contains("edgar:type=\"EX-100.INS\"")).head
 
       val filingUrl = xbrlFile.attributes.toString.split(" ").find(x => x.startsWith("edgar:url")).head
-      val dstUrl = filingUrl.split("=")(1).substring(1)
-      filing.parse(dstUrl.dropRight(1))
+      val dstUrl = filingUrl.split("=")(1).substring(1).dropRight(1)
+      filing.parse(secCompany.head, dstUrl)
     }
   }
 }

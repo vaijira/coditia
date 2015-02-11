@@ -25,6 +25,8 @@ class Company extends Record[Company] with KeyedRecord[Long] {
   override val idField = new LongField(this)
 
   val name = new StringField(this, 255)
+
+  lazy val annualReports = CoditiaSchema.companyToAnnualReports.left(this)
 }
 
 /**

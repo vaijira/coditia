@@ -9,11 +9,12 @@
  */
 package com.coditia.coditia.parser
 
-import com.coditia.coditia.model.{DBTestKit, TestLiftSession, CoditiaSchema}
-import com.coditia.coditia.model.{BalanceSheetConcept, BalanceSheetConceptEnum}
 import org.scalatest.FlatSpec
+import com.coditia.coditia.model.{DBTestKit, TestLiftSession, CoditiaSchema}
+import com.coditia.coditia.model.{BalanceSheetConcept, BalanceSheetConceptEnum, SecCompany}
 import net.liftweb.common.Loggable
 import net.liftweb.squerylrecord.RecordTypeMode._
+import com.coditia.coditia.model.Company
 
 /**
  * Test for SecCrawler
@@ -30,12 +31,20 @@ class SecParserTest extends FlatSpec with DBTestKit with TestLiftSession with Lo
   }
 
   "SEC parser treating 10-K file" should "create new concepts" in {
-    val parser = new Sec10KParser("http://www.sec.gov/Archives/edgar/data/1156375/000119312510043180/cme-20091231.xml")
+    val company = Company.createRecord.name("CME")
+    CoditiaSchema.company.insert(company)
+
+    val secCompany = SecCompany.createRecord.cik(123456).companyId(company.id)
+    CoditiaSchema.secCompany.insert(secCompany)
+
+    val doc = "http://www.sec.gov/Archives/edgar/data/1156375/000119312510043180/cme-20091231.xml"
+    val parser = new Sec10KParser(secCompany, doc)
 
     parser.parseBalanceSheet
 
     val assetConcepts = from(CoditiaSchema.balanceSheetConcept )(c =>
-      where(c.kind === BalanceSheetConceptEnum.Asset and c.parentId.isNull)
+      net.liftweb.squerylrecord.RecordTypeMode.where
+      (c.kind === BalanceSheetConceptEnum.Asset and c.parentId.isNull)
       select (c))
 
     assert(assetConcepts.size == 1, "Assets Abstract must be the only parent")
@@ -48,7 +57,8 @@ class SecParserTest extends FlatSpec with DBTestKit with TestLiftSession with Lo
     assert(assetConcept.isAbstract._1, "Concept should be abstract")
 
     val liabilityConcepts = from(CoditiaSchema.balanceSheetConcept )(c =>
-      where(c.kind === BalanceSheetConceptEnum.Liability and c.parentId.isNull)
+      net.liftweb.squerylrecord.RecordTypeMode.where
+      (c.kind === BalanceSheetConceptEnum.Liability and c.parentId.isNull)
       select (c))
 
     assert(liabilityConcepts.size == 1, "Liability And Equity Abstract must be the only parent")

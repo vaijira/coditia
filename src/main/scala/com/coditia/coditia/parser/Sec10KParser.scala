@@ -11,18 +11,20 @@ package com.coditia.coditia.parser
 
 import com.coditia.coditia.model._
 import scala.collection.JavaConversions._
-import net.liftweb.common.Loggable
+import net.liftweb.common.{Box, Empty, Full, Loggable}
 import com.google.common.collect.{ArrayListMultimap, ListMultimap}
-import org.xbrlapi.{Arc, Concept, Fact, Item, Relationship}
+import org.xbrlapi.{Arc, Concept, Fact, Relationship, Item, SimpleNumericItem}
 import org.xbrlapi.networks.{Network, Networks}
 import org.xbrlapi.utilities.Constants
 import org.xbrlapi.aspects.{AspectValue, Aspect, PeriodAspect, FactSet, FactSetImpl}
 import org.xbrlapi.xdt.aspects.{DimensionalAspectModel, ExplicitDimensionAspectValue}
 import org.xbrlapi.xdt.aspects.DimensionalAspectModelWithStoreCachingLabellers
 import scala.xml.XML
+import org.joda.time.DateTime
+import java.util.Locale
 
 
-class Sec10KParser(docUri: String) extends Loggable {
+class Sec10KParser(company: SecCompany, docUri: String) extends Loggable {
   private[this] val repository = new XbrlRepository
   private[this] val instance = repository.getInstance(docUri)
   private[this] val schema = repository.getSchema(instance)
@@ -43,12 +45,26 @@ class Sec10KParser(docUri: String) extends Loggable {
 
   private[this] val assetFacts = instance.getFacts(gaapNamespace, "Assets")
   private[this] val assetFact: Fact = if (assetFacts.isEmpty())
-        instance.getFacts("http://xbrl.us/us-gaap/2008-03-31", "Assets").get(0)
+        instance.getFacts("http://xbrl.us/us-gaap/2008-03-31", "Assets").last
       else
-        assetFacts.get(0)
+        assetFacts.last
 
   private[this] val networks: Networks = repository.store.getMinimalNetworksWithArcrole(
       assetFact.getConcept, Constants.PresentationArcrole)
+
+  private[this] val period = new DateTime(
+      assetFact.asInstanceOf[Item].getContext().getPeriod().getInstant()
+      ).toCalendar(Locale.getDefault)
+
+  private[this] val report = AnnualReport.createAnnualReport(
+         AnnualReport.createRecord.
+         companyId(company.idField._1).
+         date(period)
+       )
+
+  private[this] val balanceSheet = BalanceSheet.createBalanceSheet(
+         BalanceSheet.createRecord.reportId(report.idField._1)
+       )
 
   trait BalanceSheetState
 
@@ -92,7 +108,31 @@ class Sec10KParser(docUri: String) extends Loggable {
       kind(assetKind).
       parentId(parentId).
       isAbstract(concept.isAbstract)
-    BalanceSheetConcept.createConcept(balanceConcept).idField._1
+    BalanceSheetConcept.createConcept(balanceConcept)
+  }
+
+  private def createBalanceSheetStatement(concept: Concept, bsConcept: BalanceSheetConcept) = {
+    logger.debug("Creating balance sheet statement")
+
+    val values = for {
+      fact <- concept.getFacts
+      if (fact.isNumeric())
+    } yield fact.asInstanceOf[SimpleNumericItem].getValue()
+
+    val value: Box[BigDecimal] = if (!values.isEmpty) {
+      try { Full(BigDecimal(values.head)) }
+      catch { case e: Throwable => logger.error("wrong decimal: " + values.head); Empty}
+    } else {
+      Empty
+    }
+
+    val statement = BalanceSheetStatement.createRecord.
+       conceptId(bsConcept.idField._1).
+       balanceSheetId(balanceSheet.idField._1).
+       description(Empty).
+       value(value)
+
+    BalanceSheetStatement.createBalanceSheetStatement(statement)
   }
 
   private def recurseRelathionship(relationships: java.util.SortedSet[Relationship],
@@ -102,32 +142,36 @@ class Sec10KParser(docUri: String) extends Loggable {
 
       val concept = relationship.getTarget[Concept]
 
-      val newstate = if (concept.getName == "AssetsAbstract")
+      val newstate = if (concept.getName == "AssetsAbstract") {
                        AssetState
-                     else if (concept.getName == "LiabilitiesAndStockholdersEquityAbstract")
+                     } else if (concept.getName == "LiabilitiesAndStockholdersEquityAbstract") {
                        LiabilityAndEquityState
-                     else
+                     } else
                        state
 
-      if (newstate != UndefinedState)
-
-      {
+      if (newstate != UndefinedState) {
         logger.debug("Trying to find concept: " + concept.getName + " with ns: " + relationship.getTargetURI)
-        val conceptDB = BalanceSheetConcept.findConcept(concept.getName, relationship.getTargetURI.toString)
+        val conceptQuery = BalanceSheetConcept.findConcept(concept.getName, relationship.getTargetURI.toString)
 
-        val pid = if (conceptDB.isEmpty) {
+        val bsConcept = if (conceptQuery.isEmpty) {
           createConcept(concept, relationship.getTargetURI.toString, newstate, parent)
         } else {
-          conceptDB.head.idField._1
+          conceptQuery.head
         }
 
+        createBalanceSheetStatement(concept, bsConcept)
+
         recurseRelathionship(network.getActiveRelationshipsFrom(concept.getIndex),
-                network, newstate, pid)
+                network, newstate, bsConcept.idField._1)
       } else {
         logger.debug("Recursing undefined concept: " + concept.getName)
         recurseRelathionship(network.getActiveRelationshipsFrom(concept.getIndex), network, newstate, parent)
       }
     }
+  }
+
+  def parse() = {
+    parseBalanceSheet
   }
 
   def parseBalanceSheet() {
