@@ -10,6 +10,7 @@
 package com.coditia.coditia.model
 
 import org.squeryl.Schema
+import net.liftweb.common.Loggable
 import net.liftweb.squerylrecord.RecordTypeMode._
 
 /**
@@ -56,4 +57,35 @@ object CoditiaSchema extends Schema {
   on(balanceSheetStatement) { s =>
     declare(s.balanceSheetId defineAs indexed("balanceSheet_idx"))
   }
+
+}
+
+object DbManager extends Loggable {
+
+    def main(args: Array[String]) {
+    val usage = """
+      Manage the creation and deletion of the database schema
+
+      Usage: DbManager [create|drop]
+
+      Example: DbManager create
+      """
+    if (args.length != 1 || (args(0) != "create" && args(0) != "drop")) {
+      println(usage)
+    } else {
+      val boot = new bootstrap.liftweb.Boot
+      boot.boot
+
+      inTransaction {
+        if (args(0) == "drop") {
+          logger.info("Dropping schema ...")
+          CoditiaSchema.drop
+        } else {
+          logger.info("Creating schema ...")
+          CoditiaSchema.create
+        }
+      }
+    }
+  }
+
 }

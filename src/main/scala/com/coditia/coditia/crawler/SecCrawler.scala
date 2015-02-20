@@ -68,4 +68,32 @@ class SecCrawler extends Loggable {
       filing.parse(secCompany.head, dstUrl)
     }
   }
+
+}
+
+object SecCrawler extends Loggable {
+
+  def main(args: Array[String]) {
+    val usage = """
+      Import 10-K files from SEC RSS files.
+
+      Usage: SecCrawler url
+
+      Example: SecCrawler 'http://www.sec.gov/Archives/edgar/monthly/xbrlrss-2009-02.xml'
+      """
+    if (args.length != 1) {
+      println(usage)
+    } else {
+      val boot = new bootstrap.liftweb.Boot
+      boot.boot
+
+      inTransaction {
+        val crawler = new SecCrawler
+
+        logger.debug("loading file ..." + args(0))
+        crawler.parseRss(args(0), Filing10K)
+      }
+    }
+  }
+
 }
