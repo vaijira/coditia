@@ -1,5 +1,5 @@
 /*
- * Rest api for balance sheet concepts
+ * Rest api for companies
  *
  * Copyright (C) 2014-2015 Jorge Perez Burgos <jorge.perez*at*coditia.com>.
  *
@@ -9,18 +9,21 @@
  */
 package com.coditia.coditia.lib
 
-import com.coditia.coditia.model.BalanceSheetConcept
+import com.coditia.coditia.model.SecCompany
 import net.liftweb.http.rest.RestHelper
 import net.liftweb.json.JsonAST.JValue
 import net.liftweb.http.LiftRules
+import net.liftweb.util.BasicTypesHelpers.AsLong
 import scala.xml._
 
-object BalanceSheetConceptRest extends RestHelper {
+object SecCompanyRest extends RestHelper {
   def init = {
-    LiftRules.statelessDispatch.append(BalanceSheetConceptRest)
+    LiftRules.statelessDispatch.append(SecCompanyRest)
   }
 
-  serve( "api" / "balancesheet" prefix {
-    case Nil JsonGet _ => BalanceSheetConcept.findAll: JValue
+  serve( "api" / "seccompany" prefix {
+    case "all" :: Nil JsonGet _ => SecCompany.findAll: JValue
+
+    case AsLong(id) :: Nil JsonGet _ => SecCompany.find(id): JValue
   })
 }
