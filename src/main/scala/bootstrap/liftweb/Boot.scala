@@ -74,7 +74,7 @@ class Boot extends Loggable {
   private def initDB() {
     logger.info("Initializing database...")
 
-    def getAdapter = {
+    def getAdapter: DatabaseAdapter = {
       val adapterClass = Props.get("db.adapter") openOr "org.squeryl.adapters.H2Adapter"
       val adapter: DatabaseAdapter = Class.forName(adapterClass).newInstance().asInstanceOf[DatabaseAdapter]
 
