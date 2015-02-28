@@ -14,6 +14,7 @@ import net.liftweb.http.{Html5Properties, LiftRules, Req}
 import net.liftweb.sitemap.{Menu, SiteMap}
 import net.liftweb.common.{Loggable, Full}
 import net.liftweb.util.{Props, LiftFlowOfControlException}
+import net.liftmodules.widgets.autocomplete.AutoComplete
 import com.zaxxer.hikari.{HikariConfig, HikariDataSource}
 import org.squeryl.internals.DatabaseAdapter
 
@@ -68,6 +69,7 @@ class Boot extends Loggable {
 
     BalanceSheetConceptRest.init
     SecCompanyRest.init
+    AutoComplete.init
   }
 
   /* init DB using Hikari Pool */

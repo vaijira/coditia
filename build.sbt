@@ -28,6 +28,10 @@ javaOptions in Test ++= Seq(
     "-Dexist.home=/tmp/eXist"
 )
 
+resolvers += "sonatype-releases" at "https://oss.sonatype.org/content/repositories/releases/"
+
+resolvers += "sonatype-snapshots" at "https://oss.sonatype.org/content/groups/public/"
+
 libraryDependencies ++= {
   val liftVersion = "2.6"
   Seq(
@@ -40,6 +44,7 @@ libraryDependencies ++= {
     "com.zaxxer"             %  "HikariCP-java6"              % "2.2.4"            % "compile",
     "jgroups"                %  "jgroups-all"                 % "2.2.9.1",
     "javax.transaction"      %  "jta"                         % "1.1",
+    "net.liftmodules"        %% "widgets_2.6"                 % "1.4-SNAPSHOT",
     "net.liftweb"            %% "lift-webkit"                 % liftVersion        % "compile",
     "net.liftweb"            %% "lift-squeryl-record"         % liftVersion,
     "org.apache.lucene"      %  "lucene-core"                 % "2.4.1",
