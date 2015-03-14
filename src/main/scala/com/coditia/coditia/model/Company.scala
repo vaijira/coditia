@@ -35,7 +35,21 @@ class Company extends Record[Company] with KeyedRecord[Long] {
 /**
  * Company companion object
  */
-object Company extends Company with MetaRecord[Company]
+object Company extends Company with MetaRecord[Company] with Loggable {
+  def findAll = from(CoditiaSchema.company )(c => select (c)).toSeq
+
+  var cachedCompanies: Seq[Company] = Seq.empty
+
+  def getCompanies: Seq[Company] = {
+    if (cachedCompanies.isEmpty) {
+      cachedCompanies = findAll
+    }
+
+    cachedCompanies.foreach(c => {c.idField._1; c.name._1})
+
+    cachedCompanies
+  }
+}
 
 /**
  * Specific information related with SEC companies
