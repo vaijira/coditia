@@ -9,7 +9,8 @@
  */
 package com.coditia.coditia.snippet
 
-import net.liftweb.http.RequestVar
+
+import net.liftweb.http.DispatchSnippet
 import net.liftweb.http.S
 import net.liftweb.util.Helpers._
 import net.liftweb.common.Loggable
@@ -17,7 +18,11 @@ import net.liftmodules.widgets.autocomplete.AutoComplete
 import com.coditia.coditia.model.Company
 import net.liftweb.util.CssSel
 
-class SearchCompany extends Loggable {
+object SearchCompany extends DispatchSnippet with Loggable {
+
+  val dispatch: DispatchIt = {
+    case _ => render
+  }
 
   def default: List[String] = {
     Company.getCompanies.map( c => c.name._1).toList

@@ -36,6 +36,11 @@ class Company extends Record[Company] with KeyedRecord[Long] {
  * Company companion object
  */
 object Company extends Company with MetaRecord[Company] with Loggable {
+  def find(id: Long) = {
+    logger.debug("Trying to find company with id: " + id)
+    from(CoditiaSchema.company )(c => where(c.id === id) select(c)).headOption
+  }
+
   def findAll = from(CoditiaSchema.company )(c => select (c)).toSeq
 
   var cachedCompanies: Seq[Company] = Seq.empty

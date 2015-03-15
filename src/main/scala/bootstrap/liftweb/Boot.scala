@@ -29,6 +29,12 @@ class Boot extends Loggable {
     // where to search snippet
     LiftRules.addToPackages("com.coditia.coditia")
 
+    LiftRules.snippetDispatch.append {
+      // For StatefulSnippets, return a *new instance*
+      case "SearchCompany" => com.coditia.coditia.snippet.SearchCompany
+      case "ShowCompany" => new com.coditia.coditia.snippet.ShowCompany
+    }
+
     // Build SiteMap
     def sitemap(): SiteMap = SiteMap(
       Menu.i("Home") / "index"

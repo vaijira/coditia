@@ -1,16 +1,8 @@
-<lift:surround with="default" at="content-header">
-  <!-- Content Header (Page header) -->
-  <section class="content-header">
-    <h1>My company</h1>
-    <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Company</li>
-    </ol>
-  </section>
-</lift:surround>
-
-
 <lift:surround with="default" at="content">
   <!-- Content -->
+
+  <lift:snippet type="ShowCompany.show" />
+    <h1 name="name"></h1>
+  </lift:snippet>
 
 </lift:surround>
