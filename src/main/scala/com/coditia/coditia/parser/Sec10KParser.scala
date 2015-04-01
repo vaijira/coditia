@@ -1,7 +1,7 @@
 /*
  * Populates SEC Concepts in database.
  *
- * Copyright (C) 2014 Jorge Perez Burgos <jorge.perez*at*coditia.com>.
+ * Copyright (C) 2014-2015 Jorge Perez Burgos <jorge.perez*at*coditia.com>.
  *
  * This work is licensed under the terms of the Affero GNU GPL, version 3.
  * See the LICENSE file in the top-level directory.
@@ -12,6 +12,7 @@ package com.coditia.coditia.parser
 import com.coditia.coditia.model._
 import scala.collection.JavaConversions._
 import net.liftweb.common.{Box, Empty, Full, Loggable}
+import net.liftweb.util.Helpers.secureXML
 import com.google.common.collect.{ArrayListMultimap, ListMultimap}
 import org.xbrlapi.{Arc, Concept, Fact, Relationship, Item, SimpleNumericItem}
 import org.xbrlapi.networks.{Network, Networks}
@@ -19,7 +20,6 @@ import org.xbrlapi.utilities.Constants
 import org.xbrlapi.aspects.{AspectValue, Aspect, PeriodAspect, FactSet, FactSetImpl}
 import org.xbrlapi.xdt.aspects.{DimensionalAspectModel, ExplicitDimensionAspectValue}
 import org.xbrlapi.xdt.aspects.DimensionalAspectModelWithStoreCachingLabellers
-import scala.xml.XML
 import org.joda.time.DateTime
 import java.util.Locale
 
@@ -38,9 +38,9 @@ class Sec10KParser(company: SecCompany, docUri: String) extends Loggable {
   private val gaapNamespace = gaapSchema.getAttribute("namespace")
 
   private[this] val docMap = Map("http://xbrl.us/us-gaap/2009-01-31" ->
-                         XML.load(getClass.getResource("us-gaap-doc-2009-01-31.xml").getPath()),
+                         secureXML.load(getClass.getResource("us-gaap-doc-2009-01-31.xml").getPath()),
                                  "http://xbrl.us/us-gaap/2008-03-31" ->
-                         XML.load(getClass.getResource("us-gaap-doc-2008-03-31.xml").getPath())
+                         secureXML.load(getClass.getResource("us-gaap-doc-2008-03-31.xml").getPath())
                          )
 
   private[this] val assetFacts = instance.getFacts(gaapNamespace, "Assets")

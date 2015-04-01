@@ -33,7 +33,7 @@ resolvers += "sonatype-releases" at "https://oss.sonatype.org/content/repositori
 resolvers += "sonatype-snapshots" at "https://oss.sonatype.org/content/groups/public/"
 
 libraryDependencies ++= {
-  val liftVersion = "2.6"
+  val liftVersion = "2.6.2"
   Seq(
     "antlr"                  %  "antlr"                       % "2.7.7",
     "commons-collections"    %  "commons-collections"         % "3.2.1",

@@ -9,10 +9,10 @@
  */
 package com.coditia.coditia.crawler
 
-import scala.xml.XML
 import com.coditia.coditia.model.{CoditiaSchema, Company, SecCompany}
 import net.liftweb.squerylrecord.RecordTypeMode._
 import net.liftweb.common.Loggable
+import net.liftweb.util.Helpers.secureXML
 import com.coditia.coditia.parser.Sec10KParser
 
 
@@ -39,7 +39,7 @@ class SecCrawler extends Loggable {
    */
   def parseRss(url: String, filing: SecFiling): Unit = {
     logger.info("Loading SEC RSS XML " + url)
-    val rss = XML.load(url)
+    val rss = secureXML.load(url)
 
     val companies = (rss \\ "item").filter(item => (item \\ "formType").text == filing.kind)
 

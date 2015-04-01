@@ -1,7 +1,7 @@
 /*
  * Tests for SEC crawler.
  *
- * Copyright (C) 2014 Jorge Perez Burgos <jorge.perez*at*coditia.com>.
+ * Copyright (C) 2014-2015 Jorge Perez Burgos <jorge.perez*at*coditia.com>.
  *
  * This work is licensed under the terms of the Affero GNU GPL, version 3.
  * See the LICENSE file in the top-level directory.
@@ -43,7 +43,7 @@ class SecCrawlerTest extends FlatSpec with DBTestKit with TestLiftSession with L
     val company = companies.head
 
     assert(company.cik._1  == 765880, "Company CIK should be 765880 for HCP")
-    assert(company.company.name._1 == "HCP, INC.", "Company name must be HCP, INC.")
+    assert(company.company.name._1 == "Hcp, inc.", "Company name must be Hcp, inc.")
   }
 
 }

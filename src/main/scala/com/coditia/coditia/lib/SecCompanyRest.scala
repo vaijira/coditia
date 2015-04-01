@@ -14,7 +14,7 @@ import net.liftweb.http.rest.RestHelper
 import net.liftweb.json.JsonAST.JValue
 import net.liftweb.http.LiftRules
 import net.liftweb.util.BasicTypesHelpers.AsLong
-import scala.xml._
+import net.liftweb.util.Helpers.secureXML
 
 object SecCompanyRest extends RestHelper {
   def init = {

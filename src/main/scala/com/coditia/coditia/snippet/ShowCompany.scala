@@ -15,7 +15,7 @@ import net.liftweb.util.Helpers._
 import net.liftweb.common.Loggable
 import com.coditia.coditia.model.Company
 import net.liftweb.util.CssSel
-import scala.xml.{NodeSeq, Text}
+import scala.xml.Text
 
 class ShowCompany extends StatefulSnippet with Loggable {
   object companyVar extends RequestVar[Option[Company]](

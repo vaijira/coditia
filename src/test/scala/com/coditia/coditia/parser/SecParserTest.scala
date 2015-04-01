@@ -1,7 +1,7 @@
 /*
  * Tests for SEC parser.
  *
- * Copyright (C) 2014 Jorge Perez Burgos <jorge.perez*at*coditia.com>.
+ * Copyright (C) 2014-2015 Jorge Perez Burgos <jorge.perez*at*coditia.com>.
  *
  * This work is licensed under the terms of the Affero GNU GPL, version 3.
  * See the LICENSE file in the top-level directory.
@@ -31,7 +31,7 @@ class SecParserTest extends FlatSpec with DBTestKit with TestLiftSession with Lo
   }
 
   "SEC parser treating 10-K file" should "create new concepts" in {
-    val company = Company.createRecord.name("CME")
+    val company = Company.createRecord.name("Cme")
     CoditiaSchema.company.insert(company)
 
     val secCompany = SecCompany.createRecord.cik(123456).companyId(company.id)
