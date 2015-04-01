@@ -29,6 +29,8 @@ class Boot extends Loggable {
     // where to search snippet
     LiftRules.addToPackages("com.coditia.coditia")
 
+    LiftRules.resourceNames = "Messages" :: Nil
+
     LiftRules.snippetDispatch.append {
       // For StatefulSnippets, return a *new instance*
       case "SearchCompany" => com.coditia.coditia.snippet.SearchCompany

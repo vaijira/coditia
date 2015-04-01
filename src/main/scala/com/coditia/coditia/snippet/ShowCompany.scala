@@ -41,7 +41,7 @@ class ShowCompany extends StatefulSnippet with Loggable {
         "@name *" #> Text(c.name._1)
 
       case None => {
-        S.warning("warning", "Company not found")
+        S.warning("warning", S.?("companyNotFoundMsg"))
         "@name" #> <span class="lift:embed?what=warning_box"></span>
       }
     }

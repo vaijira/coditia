@@ -36,8 +36,10 @@ object SearchCompany extends DispatchSnippet with Loggable {
 
     def submit(value: String): Unit = {
       val companyId =
-        Company.getCompanies.filter(_.name._1.toLowerCase.startsWith(value.toLowerCase)).
-        map(_.idField._1).headOption
+        if (value != "")
+          Company.getCompanies.filter(_.name._1.toLowerCase.startsWith(value.toLowerCase)).
+            map(_.idField._1).headOption
+        else None
 
       logger.debug("Value submitted: " + value + " company id: " + companyId.getOrElse(""))
 
@@ -49,6 +51,6 @@ object SearchCompany extends DispatchSnippet with Loggable {
         suggest _,
         v => submit(v),
         List(("minChars" -> "2"), ("max" -> "15")),
-        ("class" -> "form-control"), ("placeholder" -> "Search Company"))
+        ("class" -> "form-control"), ("placeholder" -> S.?("searchCompanyMsg")))
   }
 }
