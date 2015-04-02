@@ -17,13 +17,13 @@ import com.coditia.coditia.parser.Sec10KParser
 
 
 abstract class SecFiling(val kind: String) {
-  def parse(company: SecCompany, url: String)
+  def parse(company: SecCompany, url: String, onlineUrl:String)
 }
 
 case object Filing10K extends SecFiling("10-K") with Loggable {
-  override def parse(company: SecCompany, url: String) = {
+  override def parse(company: SecCompany, url: String, onlineUrl: String) = {
     logger.info("Start to parse 10-K filing from url " + url)
-    val parser = new Sec10KParser(company, url)
+    val parser = new Sec10KParser(company, url, onlineUrl)
 
     parser.parse
   }
@@ -63,9 +63,16 @@ class SecCrawler extends Loggable {
       val xbrlFile = (company \\ "xbrlFile").filter(file =>
                         file.attributes.toString.contains("edgar:type=\"EX-100.INS\"")).head
 
+      val xbrlUrl = (company \\ "xbrlFile").filter(file =>
+                        file.attributes.toString.contains("edgar:type=\"10-K\"")).head
+
       val filingUrl = xbrlFile.attributes.toString.split(" ").find(x => x.startsWith("edgar:url")).head
       val dstUrl = filingUrl.split("=")(1).substring(1).dropRight(1)
-      filing.parse(secCompany.head, dstUrl)
+
+      val onlineUrlTmp = xbrlUrl.attributes.toString.split(" ").find(x => x.startsWith("edgar:url")).head
+      val onlineUrl = onlineUrlTmp.split("=")(1).substring(1).dropRight(1)
+
+      filing.parse(secCompany.head, dstUrl, onlineUrl)
     }
   }
 

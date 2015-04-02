@@ -24,7 +24,7 @@ import org.joda.time.DateTime
 import java.util.Locale
 
 
-class Sec10KParser(company: SecCompany, docUri: String) extends Loggable {
+class Sec10KParser(company: SecCompany, docUri: String, url: String) extends Loggable {
   private[this] val repository = new XbrlRepository
   private[this] val instance = repository.getInstance(docUri)
   private[this] val schema = repository.getSchema(instance)
@@ -59,7 +59,8 @@ class Sec10KParser(company: SecCompany, docUri: String) extends Loggable {
   private[this] val report = AnnualReport.createAnnualReport(
          AnnualReport.createRecord.
          companyId(company.idField._1).
-         date(period)
+         date(period).
+         url(url)
        )
 
   private[this] val balanceSheet = BalanceSheet.createBalanceSheet(

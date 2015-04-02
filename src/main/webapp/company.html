@@ -3,6 +3,41 @@
 
   <lift:snippet type="ShowCompany.show" />
     <h1 name="name"></h1>
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Custom Tabs -->
+        <div class="nav-tabs-custom">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab_1" data-toggle="tab">Income statement</a></li>
+            <li><a href="#tab_2" data-toggle="tab">Balance sheet</a></li>
+          </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab_1">
+            <b>How to use:</b>
+            <p>Exactly like the original bootstrap tabs except you should use
+            the custom wrapper <code>.nav-tabs-custom</code> to achieve this style.</p>
+          </div><!-- /.tab-pane -->
+          <div class="tab-pane" id="tab_2">
+            <table class="table table-condensed">
+              <thead>
+              <tr>
+                <th>Concept</th>
+                <th name="year"><a href="">2008</a></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td name="concept">abla bal bjla bla bal bla bal</td>
+                <td name="value">343</td>
+              </tr>
+              </tbody>
+              </table>
+          </div><!-- /.tab-pane -->
+
+        </div><!-- /.tab-content -->
+        </div><!-- nav-tabs-custom -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
   </lift:snippet>
 
 </lift:surround>

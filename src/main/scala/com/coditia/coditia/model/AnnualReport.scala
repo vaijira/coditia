@@ -13,7 +13,8 @@ import org.squeryl.annotations.Column
 import net.liftweb.record.{MetaRecord, Record}
 import net.liftweb.squerylrecord.KeyedRecord
 import net.liftweb.squerylrecord.RecordTypeMode._
-import net.liftweb.record.field.{DateTimeField, LongField, OptionalDecimalField, OptionalStringField}
+import net.liftweb.record.field.{DateTimeField, LongField, StringField}
+import net.liftweb.record.field.{OptionalDecimalField, OptionalStringField}
 import net.liftweb.common.Loggable
 import java.math.MathContext
 
@@ -29,6 +30,8 @@ class AnnualReport extends Record[AnnualReport] with KeyedRecord[Long] {
   val date = new DateTimeField(this)
 
   val companyId = new LongField(this)
+
+  val url = new StringField(this, 1024)
 
   lazy val balanceSheet = CoditiaSchema.annualReportToBalanceSheet.left(this).head
 }
@@ -71,6 +74,8 @@ class BalanceSheetStatement extends Record[BalanceSheetStatement] with KeyedReco
   val description = new OptionalStringField(this, 1024)
   val conceptId = new LongField(this)
   val balanceSheetId = new LongField(this)
+
+  def concept = CoditiaSchema.balanceSheetConcept.lookup(conceptId._1)
 }
 
 object BalanceSheetStatement extends BalanceSheetStatement with MetaRecord[BalanceSheetStatement]

@@ -52,7 +52,7 @@ object CoditiaSchema extends Schema {
   }
 
   val balanceSheetToBalanceSheetStatement = oneToManyRelation(balanceSheet, balanceSheetStatement).
-    via((b, s) => b.id === s.balanceSheetId )
+    via((b, s) => b.id === s.balanceSheetId)
 
   on(balanceSheetStatement) { s =>
     declare(s.balanceSheetId defineAs indexed("balanceSheet_idx"))

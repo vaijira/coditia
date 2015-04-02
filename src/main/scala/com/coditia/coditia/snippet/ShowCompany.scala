@@ -13,13 +13,14 @@ package com.coditia.coditia.snippet
 import net.liftweb.http.{RequestVar, StatefulSnippet, S}
 import net.liftweb.util.Helpers._
 import net.liftweb.common.Loggable
-import com.coditia.coditia.model.Company
+import com.coditia.coditia.model.SecCompany
 import net.liftweb.util.CssSel
 import scala.xml.Text
+import java.util.Calendar
 
 class ShowCompany extends StatefulSnippet with Loggable {
-  object companyVar extends RequestVar[Option[Company]](
-      Company.find(
+  object companyVar extends RequestVar[Option[SecCompany]](
+      SecCompany.find(
         tryo {
           S.param("id").openOr("0").toLong
         }.openOr(0)
@@ -38,7 +39,18 @@ class ShowCompany extends StatefulSnippet with Loggable {
     val company = companyVar.is
     company match {
       case Some(c) =>
-        "@name *" #> Text(c.name._1)
+        "@name *" #> Text(c.company .name._1) &
+        "thead" #> c.company.annualReports.map(r =>
+          "th @year a [href]" #> Text(r.url._1) &
+          "th @year a *" #> Text(r.date._1.get(Calendar.YEAR).toString)) &
+        "tbody" #>   c.company.annualReports.flatMap( r => 
+            r.balanceSheet.statements.filter(b => !b.value.get.isEmpty).
+            toVector.sortBy(b => b.idField._1).
+            map( b =>
+              "td @concept *" #> Text(b.concept.get.label._1) &
+              "td @value *" #> Text(b.value._1.getOrElse(0).toString)
+            )
+        )
 
       case None => {
         S.warning("warning", S.?("companyNotFoundMsg"))
