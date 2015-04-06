@@ -17,6 +17,9 @@ import com.coditia.coditia.model.SecCompany
 import net.liftweb.util.CssSel
 import scala.xml.Text
 import java.util.Calendar
+import scala.collection.mutable.Stack
+import scala.collection.immutable.Queue
+import com.coditia.coditia.model.BalanceSheetStatement
 
 class ShowCompany extends StatefulSnippet with Loggable {
   object companyVar extends RequestVar[Option[SecCompany]](
@@ -34,23 +37,77 @@ class ShowCompany extends StatefulSnippet with Loggable {
     }
   }
 
+  private def getTableHeader(c: SecCompany): CssSel = {
+    "@name *" #> Text(c.company .name._1)
+    "th @year *" #> c.company.annualReports.map(r =>
+           <a href={r.url._1}>{Text(r.date._1.get(Calendar.YEAR).toString)}</a>
+           )
+  }
+
+  private def getTableBody(c: SecCompany): CssSel = {
+    var bsVector = c.company.annualReports.map( r =>
+      r.balanceSheet.statements.toVector.sortBy(_.idField._1)).toVector
+
+    var result: Queue[Vector[String]] = Queue[Vector[String]]()
+
+    val abstractStack = Stack[String]()
+
+    var finish = false
+    var index = 0
+
+    while (!finish) {
+      val concept = bsVector.minBy(_.size)(scala.math.Ordering.Int)(index)
+
+      val i = bsVector.indexWhere( stmts => stmts(index).concept.get.name._1 != concept.concept.get.name._1)
+
+      if (i == -1) {
+        if (concept.concept.get.isAbstract._1) {
+          abstractStack.push(concept.concept.get.name._1)
+        } else {
+          if (!abstractStack.isEmpty &&
+              (abstractStack.top == (concept.concept.get.name._1 + "Abstract") ||
+              abstractStack.top == concept.concept.get.name._1))
+          {
+            result = result :+ ("-------------------------------" +:
+                bsVector.map( stmts => ""))
+            abstractStack.pop
+          }
+
+          result = result :+ (concept.description._1.getOrElse("") +:
+              bsVector.map( stmts => stmts(index).value._1.getOrElse(0.0).toString))
+        }
+        index += 1
+        if (index == bsVector.head.size) {
+          finish = true
+        }
+      } else {
+        val missingConcept = bsVector(i)(index).concept.get.name._1
+        result = result :+ (concept.description._1.getOrElse("") +:
+          bsVector.map( stmts =>
+            if (missingConcept ==  stmts(index).concept.get.name._1)
+              stmts(index).value._1.getOrElse("").toString
+            else
+              "-"
+              ))
+        bsVector = c.company.annualReports.map( r =>
+           r.balanceSheet.statements.
+           filter(stmts => stmts.concept.get.name._1 != missingConcept).
+           toVector.sortBy(_.idField._1)).toVector
+      }
+
+    }
+
+
+   "tbody tr *" #> result.map(r => r.map(v => <td>{v}</td>))
+
+  }
 
   def show: CssSel = {
     val company = companyVar.is
     company match {
       case Some(c) =>
-        "@name *" #> Text(c.company .name._1) &
-        "thead" #> c.company.annualReports.map(r =>
-          "th @year a [href]" #> Text(r.url._1) &
-          "th @year a *" #> Text(r.date._1.get(Calendar.YEAR).toString)) &
-        "tbody" #>   c.company.annualReports.flatMap( r => 
-            r.balanceSheet.statements.filter(b => !b.value.get.isEmpty).
-            toVector.sortBy(b => b.idField._1).
-            map( b =>
-              "td @concept *" #> Text(b.concept.get.label._1) &
-              "td @value *" #> Text(b.value._1.getOrElse(0).toString)
-            )
-        )
+        getTableHeader(c) &
+        getTableBody(c)
 
       case None => {
         S.warning("warning", S.?("companyNotFoundMsg"))
