@@ -44,6 +44,370 @@ class SecCrawlerTest extends FlatSpec with DBTestKit with TestLiftSession with L
 
     assert(company.cik._1  == 765880, "Company CIK should be 765880 for HCP")
     assert(company.company.name._1 == "Hcp, inc.", "Company name must be Hcp, inc.")
+
+    val statements =
+      join(CoditiaSchema.balanceSheetStatement,
+          CoditiaSchema.balanceSheetConcept) ((s, r) =>
+        where(s.balanceSheetId  === 1 and r.isAbstract === false)
+        select (s, r)
+        orderBy(s.idField)
+        on(s.conceptId === r.id )
+      )
+
+    val gaapNS = "http://xbrl.us/us-gaap/1.0/elts/us-gaap-2008-03-31.xsd"
+    val hcpNS = "http://www.sec.gov/Archives/edgar/data/765880/000104746909001929/hcp-20081231.xsd"
+
+    var statement = statements.head
+
+    assert(statement._2.name._1 == "InvestmentBuildingAndBuildingImprovements", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 7762217000.00, "big decimal value mistmatch")
+
+    var rest = statements.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "DevelopmentInProcess", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 224361000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "Land", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 1551168000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "RealEstateInvestmentPropertyAccumulatedDepreciation", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 827655000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "RealEstateInvestmentPropertyNet", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 8710091000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "NetInvestmentInDirectFinancingAndSalesTypeLeases", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 648234000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "LoansAndLeasesReceivableNetReportedAmount", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 1076392000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "InvestmentsInAffiliatesSubsidiariesAssociatesAndJointVentures", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 272929000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "AccountsReceivableNet", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 34211000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "CashAndCashEquivalentsAtCarryingValue", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 57562000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "RestrictedCashAndCashEquivalentsAtCarryingValue", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 35078000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "IntangibleAssetsNetExcludingGoodwill", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 507100000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "RealEstateHeldForSaleNet", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == hcpNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 15423000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "OtherAssets", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 492806000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "Assets", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 11849826000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "LineOfCredit", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 150000000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "LoansPayableToBank", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 520000000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "UnsecuredDebt", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 3523513000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "SecuredDebt", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 1641734000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "OtherBorrowings", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 102209000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "OffMarketLeaseUnfavorable", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 232654000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "AccountsPayableAndAccruedLiabilities", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 211691000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "DeferredRevenue", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 60185000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "Liabilities", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 6441986000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "MinorityInterestInJointVenturesHcp", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == hcpNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 12912000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "MinorityInterestInPreferredUnitHolders", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 193657000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "MinorityInterest", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 206569000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "CommitmentsAndContingencies", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 0.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "PreferredStockValue", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 285173000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "CommonStockValue", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 253601000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "AdditionalPaidInCapital", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 4873727000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "RetainedEarningsAccumulatedDeficit", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == -130068000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "AccumulatedOtherComprehensiveIncomeLossNetOfTax", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == -81162000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "StockholdersEquity", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 5201271000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
+    statement = rest.head
+
+    assert(statement._2.name._1 == "LiabilitiesAndStockholdersEquity", "Unexpected concept")
+
+    assert(statement._2.namespace._1 == gaapNS, "Concept must belong to gaap namespace")
+
+    assert(statement._1.value._1 == 11849826000.00, "big decimal value mistmatch")
+
+    rest = rest.tail
+
   }
 
 }

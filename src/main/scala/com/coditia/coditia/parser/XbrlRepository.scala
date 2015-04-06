@@ -120,7 +120,7 @@ class XbrlRepository extends Loggable {
         URI.create("http://www.xbrl.org/2003/xlink-2003-12-31.xsd"))
 
     val entityResolver: EntityResolver     = new EntityResolverImpl(cacheFile, map)
-    val loader: Loader                     = new LoaderImpl(store,xlinkProcessor, entityResolver)
+    val loader: Loader                     = new LoaderImpl(store, xlinkProcessor, entityResolver)
 
     loader.setCache(cache)
     loader.setEntityResolver(entityResolver)

@@ -43,29 +43,28 @@ class Sec10KParser(company: SecCompany, docUri: String, url: String) extends Log
                          secureXML.load(getClass.getResource("us-gaap-doc-2008-03-31.xml").getPath())
                          )
 
-  private[this] val assetFacts = instance.getFacts(gaapNamespace, "Assets")
-  private[this] val assetFact: Fact = if (assetFacts.isEmpty())
-        instance.getFacts("http://xbrl.us/us-gaap/2008-03-31", "Assets").last
+  private[this] val assetFactsTmp = instance.getFacts(gaapNamespace, "Assets")
+
+  private[this] val assetFacts = if (assetFactsTmp.isEmpty())
+        instance.getFacts("http://xbrl.us/us-gaap/2008-03-31", "Assets").
+          sortWith((f1, f2) => {
+            f1.asInstanceOf[Item].getContext().getPeriod().getInstant() >
+            f1.asInstanceOf[Item].getContext().getPeriod().getInstant()
+          })
       else
-        assetFacts.last
+        assetFactsTmp.sortWith((f1, f2) => {
+            f1.asInstanceOf[Item].getContext().getPeriod().getInstant() >
+            f1.asInstanceOf[Item].getContext().getPeriod().getInstant()
+          })
 
-  private[this] val networks: Networks = repository.store.getMinimalNetworksWithArcrole(
-      assetFact.getConcept, Constants.PresentationArcrole)
+  private[this] var networks: Networks = null
 
-  private[this] val period = new DateTime(
-      assetFact.asInstanceOf[Item].getContext().getPeriod().getInstant()
-      ).toCalendar(Locale.getDefault)
+  private[this] var reportInstant: String = null
+  private[this] var period: java.util.Calendar = null
 
-  private[this] val report = AnnualReport.createAnnualReport(
-         AnnualReport.createRecord.
-         companyId(company.idField._1).
-         date(period).
-         url(url)
-       )
+  private[this] var report: AnnualReport = null
 
-  private[this] val balanceSheet = BalanceSheet.createBalanceSheet(
-         BalanceSheet.createRecord.reportId(report.idField._1)
-       )
+  private[this] var balanceSheet: BalanceSheet = null
 
   trait BalanceSheetState
 
@@ -113,27 +112,42 @@ class Sec10KParser(company: SecCompany, docUri: String, url: String) extends Log
   }
 
   private def createBalanceSheetStatement(concept: Concept, bsConcept: BalanceSheetConcept) = {
-    logger.debug("Creating balance sheet statement")
-
-    val values = for {
+    val items = for {
       fact <- concept.getFacts
-      if (fact.isNumeric())
-    } yield fact.asInstanceOf[SimpleNumericItem].getValue()
+      f = fact.asInstanceOf[Item]
+      if (f.getContext().getPeriod().getInstant() == reportInstant)
+    } yield f
 
-    val value: Box[BigDecimal] = if (!values.isEmpty) {
-      try { Full(BigDecimal(values.head)) }
-      catch { case e: Throwable => logger.error("wrong decimal: " + values.head); Empty}
-    } else {
-      Empty
+    if (!items.isEmpty || concept.isAbstract()) {
+      logger.debug("Creating balance sheet statement")
+
+      val values = for {
+        item <- items
+        if (item.isNumeric())
+      } yield item.asInstanceOf[SimpleNumericItem].getValue()
+
+      val value: Box[BigDecimal] = if (!values.isEmpty) {
+        try {
+          Full(BigDecimal(values.head))
+        } catch {
+          case e:
+            Throwable => logger.error("wrong decimal setting it to 0: " + values.head)
+            Full(BigDecimal(0))
+        }
+      } else {
+        Empty
+      }
+
+      val label = concept.getLabelsWithResourceRole(Constants.StandardLabelRole).get(0).getStringValue().trim()
+
+      val statement = BalanceSheetStatement.createRecord.
+        conceptId(bsConcept.idField._1).
+        balanceSheetId(balanceSheet.idField._1).
+        description(label).
+        value(value)
+
+      BalanceSheetStatement.createBalanceSheetStatement(statement)
     }
-
-    val statement = BalanceSheetStatement.createRecord.
-       conceptId(bsConcept.idField._1).
-       balanceSheetId(balanceSheet.idField._1).
-       description(Empty).
-       value(value)
-
-    BalanceSheetStatement.createBalanceSheetStatement(statement)
   }
 
   private def recurseRelathionship(relationships: java.util.SortedSet[Relationship],
@@ -172,25 +186,62 @@ class Sec10KParser(company: SecCompany, docUri: String, url: String) extends Log
   }
 
   def parse() = {
-    parseBalanceSheet
+    for {
+      fact <- assetFacts
+    } {
+      networks = repository.store.getMinimalNetworksWithArcrole(
+        fact.getConcept, Constants.PresentationArcrole)
+
+      reportInstant = fact.asInstanceOf[Item].getContext().getPeriod().getInstant()
+      period = new DateTime(reportInstant).toCalendar(Locale.getDefault)
+
+      report = AnnualReport.createAnnualReport(
+         AnnualReport.createRecord.
+         companyId(company.idField._1).
+         date(period).
+         url(url)
+       )
+
+      balanceSheet = BalanceSheet.createBalanceSheet(
+         BalanceSheet.createRecord.reportId(report.idField._1)
+       )
+      parseBalanceSheet
+    }
+    repository.store.delete
   }
 
   def parseBalanceSheet() {
-    for { network <- networks
-      if (network.getLinkRole.endsWith("StatementOfFinancialPositionClassified") ||
-          network.getLinkRole.endsWith("ConsolidatedBalanceSheets"))
-    }
-    {
+    logger.debug("starting to parse balancesheet")
 
-      network.complete
-      repository.storer.storeRelationships(network)
+    for { network <- networks }{ logger.debug("linkrole: " + network.getLinkRole) }
 
-      for (i <- network.getRootFragmentIndices()) {
-        val relationships = network.getActiveRelationshipsFrom(i)
-
-        recurseRelathionship(relationships, network, UndefinedState, 0)
+    val netOption =
+      if (networks.find( n => n.getLinkRole().endsWith("ConsolidatedBalanceSheets")).isEmpty) {
+        if (networks.find( n => n.getLinkRole().endsWith("StatementOfFinancialPositionClassified")).isEmpty) {
+          networks.find( n => n.getLinkRole().endsWith("BalanceSheets")).headOption
+        } else {
+          networks.find( n => n.getLinkRole().endsWith("StatementOfFinancialPositionClassified")).headOption
+        }
       }
+      else
+        networks.find( n => n.getLinkRole().endsWith("ConsolidatedBalanceSheets")).headOption
+
+   if (!netOption.isEmpty) {
+    val network = netOption.get
+
+    network.complete
+    repository.storer.storeRelationships(network)
+
+    for (i <- network.getRootFragmentIndices()) {
+      val relationships = network.getActiveRelationshipsFrom(i)
+
+      logger.debug("Start to recurse relationships, number of children: " + relationships.size())
+
+      recurseRelathionship(relationships, network, UndefinedState, 0)
     }
+   } else {
+     logger.error("Couldn't find a valid network to parse balance sheet")
+   }
   }
 }
 

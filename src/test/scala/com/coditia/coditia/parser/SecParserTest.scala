@@ -38,7 +38,7 @@ class SecParserTest extends FlatSpec with DBTestKit with TestLiftSession with Lo
     CoditiaSchema.secCompany.insert(secCompany)
 
     val doc = "http://www.sec.gov/Archives/edgar/data/1156375/000119312510043180/cme-20091231.xml"
-    val parser = new Sec10KParser(secCompany, doc)
+    val parser = new Sec10KParser(secCompany, doc, "")
 
     parser.parseBalanceSheet
 
