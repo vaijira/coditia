@@ -39,14 +39,16 @@ class ShowCompany extends StatefulSnippet with Loggable {
 
   private def getTableHeader(c: SecCompany): CssSel = {
     "@name *" #> Text(c.company .name._1)
-    "th @year *" #> c.company.annualReports.map(r =>
+    "th @year *" #> c.company.annualReports.toVector.sortWith((a, b) => a.date._1.before(b.date._1)).
+      map(r =>
            <a href={r.url._1}>{Text(r.date._1.get(Calendar.YEAR).toString)}</a>
            )
   }
 
   private def getTableBody(c: SecCompany): CssSel = {
-    var bsVector = c.company.annualReports.map( r =>
-      r.balanceSheet.statements.toVector.sortBy(_.idField._1)).toVector
+    var bsVector = c.company.annualReports.toVector.sortWith((a, b) => a.date._1.before(b.date._1)).
+      map( r =>
+        r.balanceSheet.statements.toVector.sortBy(_.idField._1)).toVector
 
     var result: Queue[Vector[String]] = Queue[Vector[String]]()
 
@@ -82,14 +84,15 @@ class ShowCompany extends StatefulSnippet with Loggable {
         }
       } else {
         val missingConcept = bsVector(i)(index).concept.get.name._1
-        result = result :+ (concept.description._1.getOrElse("") +:
+        result = result :+ (bsVector(i)(index).description._1.getOrElse("") +:
           bsVector.map( stmts =>
             if (missingConcept ==  stmts(index).concept.get.name._1)
               stmts(index).value._1.getOrElse("").toString
             else
               "-"
               ))
-        bsVector = c.company.annualReports.map( r =>
+        bsVector = c.company.annualReports.toVector.sortWith((a, b) => a.date._1.before(b.date._1)).
+          map( r =>
            r.balanceSheet.statements.
            filter(stmts => stmts.concept.get.name._1 != missingConcept).
            toVector.sortBy(_.idField._1)).toVector
