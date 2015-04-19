@@ -186,9 +186,8 @@ class Sec10KParser(company: SecCompany, docUri: String, url: String) extends Log
   }
 
   def parse() = {
-    for {
-      fact <- assetFacts
-    } {
+
+    for (fact <- assetFacts) {
       networks = repository.store.getMinimalNetworksWithArcrole(
         fact.getConcept, Constants.PresentationArcrole)
 
@@ -196,21 +195,23 @@ class Sec10KParser(company: SecCompany, docUri: String, url: String) extends Log
       period = new DateTime(reportInstant).toCalendar(Locale.getDefault)
 
       report = AnnualReport.createAnnualReport(
-         AnnualReport.createRecord.
-         companyId(company.idField._1).
-         date(period).
-         url(url)
-       )
+          AnnualReport.createRecord.
+          companyId(company.idField._1).
+          date(period).
+          url(url)
+        )
 
       balanceSheet = BalanceSheet.createBalanceSheet(
-         BalanceSheet.createRecord.reportId(report.idField._1)
-       )
+          BalanceSheet.createRecord.reportId(report.idField._1)
+        )
+
       parseBalanceSheet
     }
+
     repository.store.delete
   }
 
-  def parseBalanceSheet() {
+  private def parseBalanceSheet() {
     logger.debug("starting to parse balancesheet")
 
     for { network <- networks }{ logger.debug("linkrole: " + network.getLinkRole) }
