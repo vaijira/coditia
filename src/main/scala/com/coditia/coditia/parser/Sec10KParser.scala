@@ -66,6 +66,8 @@ class Sec10KParser(company: SecCompany, docUri: String, url: String) extends Log
 
   private[this] var balanceSheet: BalanceSheet = null
 
+  private [this] var exploredConcepts: scala.collection.mutable.Set[String] = scala.collection.mutable.Set()
+
   trait BalanceSheetState
 
   case object AssetState              extends BalanceSheetState
@@ -156,6 +158,8 @@ class Sec10KParser(company: SecCompany, docUri: String, url: String) extends Log
     for (relationship <- relationships) {
 
       val concept = relationship.getTarget[Concept]
+      if (exploredConcepts.exists(_ == concept.getName)) return
+      exploredConcepts.add(concept.getName)
 
       val newstate = if (concept.getName == "AssetsAbstract") {
                        AssetState
@@ -165,7 +169,7 @@ class Sec10KParser(company: SecCompany, docUri: String, url: String) extends Log
                        state
 
       if (newstate != UndefinedState) {
-        logger.debug("Trying to find concept: " + concept.getName + " with ns: " + relationship.getTargetURI)
+        logger.debug("Index: " + parent + " trying to find concept: " + concept.getName + " with ns: " + relationship.getTargetURI)
         val conceptQuery = BalanceSheetConcept.findConcept(concept.getName, relationship.getTargetURI.toString)
 
         val bsConcept = if (conceptQuery.isEmpty) {
@@ -213,6 +217,7 @@ class Sec10KParser(company: SecCompany, docUri: String, url: String) extends Log
 
   private def parseBalanceSheet() {
     logger.debug("starting to parse balancesheet")
+    exploredConcepts.clear
 
     for { network <- networks }{ logger.debug("linkrole: " + network.getLinkRole) }
 
