@@ -113,7 +113,7 @@ class Sec10KParser(company: SecCompany, docUri: String, url: String) extends Log
     BalanceSheetConcept.createConcept(balanceConcept)
   }
 
-  private def createBalanceSheetStatement(concept: Concept, bsConcept: BalanceSheetConcept) = {
+  private def createBalanceSheetStatement(concept: Concept, bsConcept: BalanceSheetConcept): Unit = {
     val items = for {
       fact <- concept.getFacts
       f = fact.asInstanceOf[Item]
@@ -140,6 +140,12 @@ class Sec10KParser(company: SecCompany, docUri: String, url: String) extends Log
         Empty
       }
 
+      if (exploredConcepts.exists(_ == concept.getName) && !value.isEmpty) {
+        logger.debug("Concept " + concept.getName + " not abstract already exists, shortcircuiting it ...")
+        return
+      }
+      exploredConcepts.add(concept.getName)
+
       val label = concept.getLabelsWithResourceRole(Constants.StandardLabelRole).get(0).getStringValue().trim()
 
       val statement = BalanceSheetStatement.createRecord.
@@ -158,8 +164,6 @@ class Sec10KParser(company: SecCompany, docUri: String, url: String) extends Log
     for (relationship <- relationships) {
 
       val concept = relationship.getTarget[Concept]
-      if (exploredConcepts.exists(_ == concept.getName)) return
-      exploredConcepts.add(concept.getName)
 
       val newstate = if (concept.getName == "AssetsAbstract") {
                        AssetState
@@ -169,6 +173,10 @@ class Sec10KParser(company: SecCompany, docUri: String, url: String) extends Log
                        state
 
       if (newstate != UndefinedState) {
+        if (exploredConcepts.exists(_ == "LiabilitiesAndStockholdersEquity")) {
+          logger.debug("Reached end of balance sheet already, don't process more")
+          return
+        }
         logger.debug("Index: " + parent + " trying to find concept: " + concept.getName + " with ns: " + relationship.getTargetURI)
         val conceptQuery = BalanceSheetConcept.findConcept(concept.getName, relationship.getTargetURI.toString)
 
