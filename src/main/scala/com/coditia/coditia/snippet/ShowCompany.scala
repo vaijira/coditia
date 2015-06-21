@@ -41,7 +41,7 @@ class ShowCompany extends StatefulSnippet with Loggable {
     "@name *" #> Text(c.company .name._1)
     "th @year *" #> c.company.annualReports.toVector.sortWith((a, b) => a.date._1.before(b.date._1)).
       map(r =>
-           <a href={r.url._1}>{Text(r.date._1.get(Calendar.YEAR).toString)}</a>
+           <a href={r.url._1} target="_blank">{Text(r.date._1.get(Calendar.YEAR).toString)}</a>
            )
   }
 
